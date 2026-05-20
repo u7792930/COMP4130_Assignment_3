@@ -1,0 +1,826 @@
+2026-05-20 17:31:49,089 [INFO] ============================================================
+2026-05-20 17:31:49,089 [INFO] Task 4 Pipeline — Starting
+2026-05-20 17:31:49,089 [INFO] ============================================================
+2026-05-20 17:31:49,089 [INFO] Loading CSV: LLM_Test_Gen/data/task1_output.csv
+2026-05-20 17:31:49,109 [INFO]   -> 66 rows loaded
+2026-05-20 17:31:49,110 [INFO] Loading prompt template: LLM_Test_Gen/Scripts/prompt_template.txt
+2026-05-20 17:31:49,110 [INFO]   -> 5198 chars loaded
+2026-05-20 17:31:49,110 [INFO] ------------------------------------------------------------
+2026-05-20 17:31:49,110 [INFO] TASK 4.1: Generating tests via GPT-4o-mini
+2026-05-20 17:31:49,110 [INFO] ------------------------------------------------------------
+2026-05-20 17:31:49,342 [INFO] [1/66] Generating test for: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 17:31:50,325 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:50,326 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:50,326 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:51,327 [INFO] [2/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 17:31:51,534 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:51,535 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:51,535 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:52,536 [INFO] [3/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 17:31:52,716 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:52,717 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:52,717 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:53,718 [INFO] [4/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 17:31:53,924 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:53,925 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:53,925 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:54,926 [INFO] [5/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 17:31:55,141 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:55,141 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:55,141 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:56,142 [INFO] [6/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 17:31:56,357 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:56,357 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:56,357 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:57,358 [INFO] [7/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 17:31:57,564 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:57,564 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:57,565 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:58,565 [INFO] [8/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 17:31:58,742 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:58,743 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:58,743 [INFO]   -> Generated 409 chars
+2026-05-20 17:31:59,744 [INFO] [9/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 17:31:59,939 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:31:59,939 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:31:59,939 [INFO]   -> Generated 409 chars
+2026-05-20 17:32:00,940 [INFO] [10/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 17:32:01,139 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-20 17:32:01,139 [ERROR] API call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************XecA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-20 17:32:01,139 [INFO]   -> Generated 409 chars
+2026-05-20 17:45:20,537 [INFO] ============================================================
+2026-05-20 17:45:20,537 [INFO] Task 4 Pipeline — Starting
+2026-05-20 17:45:20,537 [INFO] ============================================================
+2026-05-20 17:45:20,537 [INFO] Loading CSV: LLM_Test_Gen/data/task1_output.csv
+2026-05-20 17:45:20,540 [INFO]   -> 66 rows loaded
+2026-05-20 17:45:20,540 [INFO] Loading prompt template: LLM_Test_Gen/Scripts/prompt_template.txt
+2026-05-20 17:45:20,541 [INFO]   -> 5198 chars loaded
+2026-05-20 17:45:20,541 [INFO] ------------------------------------------------------------
+2026-05-20 17:45:20,541 [INFO] TASK 4.1: Generating tests via GPT-4o-mini
+2026-05-20 17:45:20,541 [INFO] ------------------------------------------------------------
+2026-05-20 17:45:20,804 [INFO] [1/66] Generating test for: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 17:45:33,406 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:45:33,410 [INFO]   -> Generated 535 chars
+2026-05-20 17:45:34,411 [INFO] [2/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 17:45:43,568 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:45:43,569 [INFO]   -> Generated 799 chars
+2026-05-20 17:45:44,570 [INFO] [3/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 17:45:49,963 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:45:49,970 [INFO]   -> Generated 924 chars
+2026-05-20 17:45:50,971 [INFO] [4/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 17:45:55,745 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:45:55,745 [INFO]   -> Generated 963 chars
+2026-05-20 17:45:56,746 [INFO] [5/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 17:46:02,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:02,023 [INFO]   -> Generated 751 chars
+2026-05-20 17:46:03,024 [INFO] [6/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 17:46:07,796 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:07,798 [INFO]   -> Generated 875 chars
+2026-05-20 17:46:08,798 [INFO] [7/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 17:46:16,369 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:16,370 [INFO]   -> Generated 810 chars
+2026-05-20 17:46:17,370 [INFO] [8/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 17:46:23,194 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:23,195 [INFO]   -> Generated 801 chars
+2026-05-20 17:46:24,196 [INFO] [9/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 17:46:29,154 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:29,154 [INFO]   -> Generated 828 chars
+2026-05-20 17:46:30,155 [INFO] [10/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 17:46:35,685 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:35,699 [INFO]   -> Generated 917 chars
+2026-05-20 17:46:36,701 [INFO] [11/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-20 17:46:40,956 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:40,957 [INFO]   -> Generated 684 chars
+2026-05-20 17:46:41,957 [INFO] [12/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-20 17:46:49,420 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:49,421 [INFO]   -> Generated 1519 chars
+2026-05-20 17:46:50,421 [INFO] [13/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:46:55,318 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:46:55,318 [INFO]   -> Generated 914 chars
+2026-05-20 17:46:56,319 [INFO] [14/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:47:02,080 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:02,085 [INFO]   -> Generated 985 chars
+2026-05-20 17:47:03,086 [INFO] [15/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-20 17:47:07,768 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:07,974 [INFO]   -> Generated 708 chars
+2026-05-20 17:47:08,974 [INFO] [16/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-20 17:47:13,703 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:13,704 [INFO]   -> Generated 745 chars
+2026-05-20 17:47:14,704 [INFO] [17/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-20 17:47:19,880 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:19,881 [INFO]   -> Generated 759 chars
+2026-05-20 17:47:20,882 [INFO] [18/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-20 17:47:27,586 [INFO] ============================================================
+2026-05-20 17:47:27,586 [INFO] Task 4 Pipeline — Starting
+2026-05-20 17:47:27,586 [INFO] ============================================================
+2026-05-20 17:47:27,586 [INFO] Loading CSV: LLM_Test_Gen/data/task1_output.csv
+2026-05-20 17:47:27,589 [INFO]   -> 66 rows loaded
+2026-05-20 17:47:27,589 [INFO] Loading prompt template: LLM_Test_Gen/Scripts/prompt_template.txt
+2026-05-20 17:47:27,590 [INFO]   -> 5198 chars loaded
+2026-05-20 17:47:27,590 [INFO] ------------------------------------------------------------
+2026-05-20 17:47:27,590 [INFO] TASK 4.1: Generating tests via GPT-4o-mini
+2026-05-20 17:47:27,590 [INFO] ------------------------------------------------------------
+2026-05-20 17:47:27,802 [INFO] [1/66] Generating test for: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 17:47:36,391 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:36,404 [INFO]   -> Generated 642 chars
+2026-05-20 17:47:37,405 [INFO] [2/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 17:47:42,088 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:42,089 [INFO]   -> Generated 771 chars
+2026-05-20 17:47:43,090 [INFO] [3/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 17:47:50,751 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:50,751 [INFO]   -> Generated 948 chars
+2026-05-20 17:47:51,752 [INFO] [4/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 17:47:56,936 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:47:56,943 [INFO]   -> Generated 1157 chars
+2026-05-20 17:47:57,945 [INFO] [5/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 17:48:02,285 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:02,289 [INFO]   -> Generated 773 chars
+2026-05-20 17:48:03,291 [INFO] [6/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 17:48:07,285 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:07,299 [INFO]   -> Generated 865 chars
+2026-05-20 17:48:08,299 [INFO] [7/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 17:48:13,132 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:13,132 [INFO]   -> Generated 760 chars
+2026-05-20 17:48:14,133 [INFO] [8/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 17:48:18,765 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:18,766 [INFO]   -> Generated 926 chars
+2026-05-20 17:48:19,767 [INFO] [9/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 17:48:23,695 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:23,696 [INFO]   -> Generated 760 chars
+2026-05-20 17:48:24,697 [INFO] [10/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 17:48:28,721 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:28,722 [INFO]   -> Generated 731 chars
+2026-05-20 17:48:29,723 [INFO] [11/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-20 17:48:34,308 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:34,310 [INFO]   -> Generated 826 chars
+2026-05-20 17:48:35,311 [INFO] [12/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-20 17:48:42,086 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:42,091 [INFO]   -> Generated 1385 chars
+2026-05-20 17:48:43,092 [INFO] [13/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:48:49,321 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:49,326 [INFO]   -> Generated 1321 chars
+2026-05-20 17:48:50,327 [INFO] [14/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:48:54,786 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:48:54,791 [INFO]   -> Generated 873 chars
+2026-05-20 17:48:55,792 [INFO] [15/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-20 17:49:01,308 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:01,313 [INFO]   -> Generated 693 chars
+2026-05-20 17:49:02,313 [INFO] [16/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-20 17:49:07,849 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:07,853 [INFO]   -> Generated 733 chars
+2026-05-20 17:49:08,854 [INFO] [17/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-20 17:49:12,988 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:12,989 [INFO]   -> Generated 724 chars
+2026-05-20 17:49:13,990 [INFO] [18/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-20 17:49:18,457 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:18,461 [INFO]   -> Generated 782 chars
+2026-05-20 17:49:19,462 [INFO] [19/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-20 17:49:22,869 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:22,873 [INFO]   -> Generated 734 chars
+2026-05-20 17:49:23,874 [INFO] [20/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-20 17:49:27,471 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:27,477 [INFO]   -> Generated 651 chars
+2026-05-20 17:49:28,478 [INFO] [21/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:49:33,800 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:33,808 [INFO]   -> Generated 1446 chars
+2026-05-20 17:49:34,809 [INFO] [22/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:49:40,794 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:40,798 [INFO]   -> Generated 1755 chars
+2026-05-20 17:49:41,799 [INFO] [23/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:49:47,166 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:47,176 [INFO]   -> Generated 1353 chars
+2026-05-20 17:49:48,177 [INFO] [24/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-20 17:49:56,373 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:49:56,374 [INFO]   -> Generated 1919 chars
+2026-05-20 17:49:57,375 [INFO] [25/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-20 17:50:10,338 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:10,339 [INFO]   -> Generated 3110 chars
+2026-05-20 17:50:11,339 [INFO] [26/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-20 17:50:15,408 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:15,412 [INFO]   -> Generated 874 chars
+2026-05-20 17:50:16,413 [INFO] [27/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-20 17:50:23,681 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:23,687 [INFO]   -> Generated 1250 chars
+2026-05-20 17:50:24,687 [INFO] [28/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 17:50:29,992 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:30,000 [INFO]   -> Generated 987 chars
+2026-05-20 17:50:31,000 [INFO] [29/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-20 17:50:35,261 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:35,274 [INFO]   -> Generated 895 chars
+2026-05-20 17:50:36,275 [INFO] [30/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 17:50:47,410 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:47,420 [INFO]   -> Generated 1605 chars
+2026-05-20 17:50:48,421 [INFO] [31/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-20 17:50:52,997 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:53,001 [INFO]   -> Generated 1001 chars
+2026-05-20 17:50:54,002 [INFO] [32/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-20 17:50:59,560 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:50:59,567 [INFO]   -> Generated 1110 chars
+2026-05-20 17:51:00,568 [INFO] [33/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 17:51:05,571 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:05,571 [INFO]   -> Generated 1051 chars
+2026-05-20 17:51:06,572 [INFO] [34/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-20 17:51:12,159 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:12,167 [INFO]   -> Generated 1279 chars
+2026-05-20 17:51:13,168 [INFO] [35/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-20 17:51:17,094 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:17,102 [INFO]   -> Generated 961 chars
+2026-05-20 17:51:18,103 [INFO] [36/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 17:51:21,841 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:21,848 [INFO]   -> Generated 885 chars
+2026-05-20 17:51:22,848 [INFO] [37/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 17:51:28,709 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:28,716 [INFO]   -> Generated 1199 chars
+2026-05-20 17:51:29,717 [INFO] [38/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 17:51:37,295 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:37,306 [INFO]   -> Generated 1620 chars
+2026-05-20 17:51:38,308 [INFO] [39/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-20 17:51:42,854 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:42,862 [INFO]   -> Generated 1075 chars
+2026-05-20 17:51:43,863 [INFO] [40/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-20 17:51:47,790 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:47,797 [INFO]   -> Generated 1016 chars
+2026-05-20 17:51:48,798 [INFO] [41/66] Generating test for: org.apache.commons.collections4.map.Values.iterator
+2026-05-20 17:51:53,509 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:51:53,517 [INFO]   -> Generated 1214 chars
+2026-05-20 17:51:54,518 [INFO] [42/66] Generating test for: org.apache.commons.collections4.map.Values.size
+2026-05-20 17:52:00,325 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:00,326 [INFO]   -> Generated 1226 chars
+2026-05-20 17:52:01,327 [INFO] [43/66] Generating test for: org.apache.commons.collections4.map.Values.clear
+2026-05-20 17:52:05,116 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:05,123 [INFO]   -> Generated 761 chars
+2026-05-20 17:52:06,124 [INFO] [44/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-20 17:52:14,428 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:14,432 [INFO]   -> Generated 1880 chars
+2026-05-20 17:52:15,433 [INFO] [45/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-20 17:52:20,502 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:20,513 [INFO]   -> Generated 1240 chars
+2026-05-20 17:52:21,513 [INFO] [46/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-20 17:52:31,759 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:31,762 [INFO]   -> Generated 1917 chars
+2026-05-20 17:52:32,763 [INFO] [47/66] Generating test for: org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-20 17:52:38,020 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:38,027 [INFO]   -> Generated 1347 chars
+2026-05-20 17:52:39,027 [INFO] [48/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-20 17:52:44,454 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:44,455 [INFO]   -> Generated 1114 chars
+2026-05-20 17:52:45,455 [INFO] [49/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-20 17:52:52,023 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:52,026 [INFO]   -> Generated 1567 chars
+2026-05-20 17:52:53,027 [INFO] [50/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-20 17:52:58,990 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:52:59,002 [INFO]   -> Generated 1395 chars
+2026-05-20 17:53:00,003 [INFO] [51/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-20 17:53:09,013 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:09,017 [INFO]   -> Generated 1487 chars
+2026-05-20 17:53:10,017 [INFO] [52/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-20 17:53:15,235 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:15,242 [INFO]   -> Generated 1236 chars
+2026-05-20 17:53:16,243 [INFO] [53/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-20 17:53:23,729 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:23,733 [INFO]   -> Generated 1614 chars
+2026-05-20 17:53:24,734 [INFO] [54/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 17:53:30,995 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:31,002 [INFO]   -> Generated 997 chars
+2026-05-20 17:53:32,002 [INFO] [55/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 17:53:41,970 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:41,972 [INFO]   -> Generated 1802 chars
+2026-05-20 17:53:42,973 [INFO] [56/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 17:53:50,871 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:53:50,874 [INFO]   -> Generated 1507 chars
+2026-05-20 17:53:51,875 [INFO] [57/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 17:54:02,936 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:02,941 [INFO]   -> Generated 2213 chars
+2026-05-20 17:54:03,941 [INFO] [58/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-20 17:54:09,247 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:09,256 [INFO]   -> Generated 1084 chars
+2026-05-20 17:54:10,257 [INFO] [59/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-20 17:54:16,329 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:16,329 [INFO]   -> Generated 1504 chars
+2026-05-20 17:54:17,330 [INFO] [60/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-20 17:54:24,919 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:24,924 [INFO]   -> Generated 1544 chars
+2026-05-20 17:54:25,925 [INFO] [61/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-20 17:54:33,482 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:33,495 [INFO]   -> Generated 1623 chars
+2026-05-20 17:54:34,496 [INFO] [62/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-20 17:54:40,003 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:40,010 [INFO]   -> Generated 1060 chars
+2026-05-20 17:54:41,011 [INFO] [63/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-20 17:54:48,628 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:48,635 [INFO]   -> Generated 1635 chars
+2026-05-20 17:54:49,636 [INFO] [64/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-20 17:54:55,931 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:54:55,938 [INFO]   -> Generated 1454 chars
+2026-05-20 17:54:56,939 [INFO] [65/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-20 17:55:01,074 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:55:01,076 [INFO]   -> Generated 879 chars
+2026-05-20 17:55:02,077 [INFO] [66/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-20 17:55:08,731 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 17:55:08,736 [INFO]   -> Generated 1478 chars
+2026-05-20 17:55:09,743 [INFO] Intermediate CSV saved: LLM_Test_Gen/data/task4_output_after_generation.csv
+2026-05-20 17:55:09,743 [INFO] ------------------------------------------------------------
+2026-05-20 17:55:09,743 [INFO] TASK 4.2: Formatting and saving test files
+2026-05-20 17:55:09,743 [INFO] ------------------------------------------------------------
+2026-05-20 17:55:09,743 [INFO] Clearing test directory for: codec
+2026-05-20 17:55:09,745 [INFO] Clearing test directory for: collections
+2026-05-20 17:55:09,746 [INFO] Clearing test directory for: compress
+2026-05-20 17:55:09,747 [INFO] [1/66] Formatting: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 17:55:09,748 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_equals_1.java
+2026-05-20 17:55:09,748 [INFO] [2/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 17:55:09,749 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytes_1.java
+2026-05-20 17:55:09,749 [INFO] [3/66] Formatting: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 17:55:09,749 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getByteBuffer_1.java
+2026-05-20 17:55:09,750 [INFO] [4/66] Formatting: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 17:55:09,750 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getByteBufferUtf8_1.java
+2026-05-20 17:55:09,751 [INFO] [5/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 17:55:09,751 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesIso88591_1.java
+2026-05-20 17:55:09,751 [INFO] [6/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 17:55:09,752 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUnchecked_1.java
+2026-05-20 17:55:09,752 [INFO] [7/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 17:55:09,753 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUsAscii_1.java
+2026-05-20 17:55:09,753 [INFO] [8/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 17:55:09,754 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16_1.java
+2026-05-20 17:55:09,754 [INFO] [9/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 17:55:09,754 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16Be_1.java
+2026-05-20 17:55:09,754 [INFO] [10/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 17:55:09,755 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16Le_1.java
+2026-05-20 17:55:09,755 [INFO] [11/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-20 17:55:09,756 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf8_1.java
+2026-05-20 17:55:09,756 [INFO] [12/66] Formatting: org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-20 17:55:09,757 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newIllegalStateException_1.java
+2026-05-20 17:55:09,757 [INFO] [13/66] Formatting: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:55:09,758 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newString_1.java
+2026-05-20 17:55:09,758 [INFO] [14/66] Formatting: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 17:55:09,758 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newString_2.java
+2026-05-20 17:55:09,759 [INFO] [15/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-20 17:55:09,759 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringIso88591_1.java
+2026-05-20 17:55:09,759 [INFO] [16/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-20 17:55:09,760 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUsAscii_1.java
+2026-05-20 17:55:09,760 [INFO] [17/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-20 17:55:09,761 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16_1.java
+2026-05-20 17:55:09,761 [INFO] [18/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-20 17:55:09,761 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16Be_1.java
+2026-05-20 17:55:09,762 [INFO] [19/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-20 17:55:09,762 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16Le_1.java
+2026-05-20 17:55:09,762 [INFO] [20/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-20 17:55:09,763 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf8_1.java
+2026-05-20 17:55:09,763 [INFO] [21/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:55:09,764 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_1.java
+2026-05-20 17:55:09,764 [INFO] [22/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:55:09,765 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_2.java
+2026-05-20 17:55:09,765 [INFO] [23/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 17:55:09,766 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_3.java
+2026-05-20 17:55:09,766 [INFO] [24/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-20 17:55:09,766 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_writeObject_1.java
+2026-05-20 17:55:09,766 [INFO] [25/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-20 17:55:09,767 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_readObject_1.java
+2026-05-20 17:55:09,767 [INFO] [26/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-20 17:55:09,768 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_clear_1.java
+2026-05-20 17:55:09,768 [INFO] [27/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-20 17:55:09,769 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_removeMapping_1.java
+2026-05-20 17:55:09,769 [INFO] [28/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 17:55:09,770 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_containsValue_1.java
+2026-05-20 17:55:09,770 [INFO] [29/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-20 17:55:09,770 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_put_1.java
+2026-05-20 17:55:09,771 [INFO] [30/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 17:55:09,771 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_putAll_1.java
+2026-05-20 17:55:09,771 [INFO] [31/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-20 17:55:09,772 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_entrySet_1.java
+2026-05-20 17:55:09,772 [INFO] [32/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-20 17:55:09,773 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_values_1.java
+2026-05-20 17:55:09,773 [INFO] [33/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 17:55:09,773 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_containsValue_2.java
+2026-05-20 17:55:09,773 [INFO] [34/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-20 17:55:09,774 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_getCollection_1.java
+2026-05-20 17:55:09,774 [INFO] [35/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-20 17:55:09,775 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_size_1.java
+2026-05-20 17:55:09,775 [INFO] [36/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 17:55:09,776 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_putAll_2.java
+2026-05-20 17:55:09,776 [INFO] [37/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 17:55:09,777 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_iterator_1.java
+2026-05-20 17:55:09,777 [INFO] [38/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 17:55:09,777 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_iterator_2.java
+2026-05-20 17:55:09,778 [INFO] [39/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-20 17:55:09,778 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_totalSize_1.java
+2026-05-20 17:55:09,778 [INFO] [40/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-20 17:55:09,779 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_createCollection_1.java
+2026-05-20 17:55:09,779 [INFO] [41/66] Formatting: org.apache.commons.collections4.map.Values.iterator
+2026-05-20 17:55:09,780 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_iterator_1.java
+2026-05-20 17:55:09,780 [INFO] [42/66] Formatting: org.apache.commons.collections4.map.Values.size
+2026-05-20 17:55:09,780 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_size_1.java
+2026-05-20 17:55:09,780 [INFO] [43/66] Formatting: org.apache.commons.collections4.map.Values.clear
+2026-05-20 17:55:09,781 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_clear_1.java
+2026-05-20 17:55:09,781 [INFO] [44/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-20 17:55:09,782 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_remove_1.java
+2026-05-20 17:55:09,782 [INFO] [45/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-20 17:55:09,783 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_hasNext_1.java
+2026-05-20 17:55:09,783 [INFO] [46/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-20 17:55:09,783 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_next_1.java
+2026-05-20 17:55:09,784 [INFO] [47/66] Formatting: org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-20 17:55:09,784 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestReflectionFactory_create_1.java
+2026-05-20 17:55:09,784 [INFO] [48/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-20 17:55:09,785 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseOctal_1.java
+2026-05-20 17:55:09,785 [INFO] [49/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-20 17:55:09,786 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseOctalOrBinary_1.java
+2026-05-20 17:55:09,786 [INFO] [50/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-20 17:55:09,787 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBinaryLong_1.java
+2026-05-20 17:55:09,787 [INFO] [51/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-20 17:55:09,787 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBinaryBigInteger_1.java
+2026-05-20 17:55:09,788 [INFO] [52/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-20 17:55:09,788 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBoolean_1.java
+2026-05-20 17:55:09,788 [INFO] [53/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-20 17:55:09,789 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_exceptionMessage_1.java
+2026-05-20 17:55:09,789 [INFO] [54/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 17:55:09,790 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseName_1.java
+2026-05-20 17:55:09,790 [INFO] [55/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 17:55:09,790 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseName_2.java
+2026-05-20 17:55:09,791 [INFO] [56/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 17:55:09,791 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatNameBytes_1.java
+2026-05-20 17:55:09,791 [INFO] [57/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 17:55:09,792 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatNameBytes_2.java
+2026-05-20 17:55:09,792 [INFO] [58/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-20 17:55:09,793 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatUnsignedOctalString_1.java
+2026-05-20 17:55:09,793 [INFO] [59/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-20 17:55:09,794 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatOctalBytes_1.java
+2026-05-20 17:55:09,794 [INFO] [60/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-20 17:55:09,795 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongOctalBytes_1.java
+2026-05-20 17:55:09,795 [INFO] [61/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-20 17:55:09,795 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongOctalOrBinaryBytes_1.java
+2026-05-20 17:55:09,796 [INFO] [62/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-20 17:55:09,796 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongBinary_1.java
+2026-05-20 17:55:09,796 [INFO] [63/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-20 17:55:09,797 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatBigIntegerBinary_1.java
+2026-05-20 17:55:09,797 [INFO] [64/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-20 17:55:09,798 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatCheckSumOctalBytes_1.java
+2026-05-20 17:55:09,798 [INFO] [65/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-20 17:55:09,798 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_computeCheckSum_1.java
+2026-05-20 17:55:09,798 [INFO] [66/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-20 17:55:09,799 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_verifyCheckSum_1.java
+2026-05-20 17:55:09,803 [INFO] Final CSV saved: LLM_Test_Gen/data/task4_output.csv
+2026-05-20 17:55:09,803 [INFO] ============================================================
+2026-05-20 17:55:09,803 [INFO] SUMMARY
+2026-05-20 17:55:09,803 [INFO] ============================================================
+2026-05-20 17:55:09,804 [INFO] Total focal methods/units: 66
+2026-05-20 17:55:09,804 [INFO] Tests saved successfully:  66
+2026-05-20 17:55:09,804 [INFO] Failed/skipped:            0
+2026-05-20 17:55:09,806 [INFO]   codec: 20 tests saved
+2026-05-20 17:55:09,808 [INFO]   collections: 27 tests saved
+2026-05-20 17:55:09,810 [INFO]   compress: 19 tests saved
+2026-05-20 19:08:12,687 [INFO] ============================================================
+2026-05-20 19:08:12,687 [INFO] Task 4 Pipeline — Starting
+2026-05-20 19:08:12,687 [INFO] ============================================================
+2026-05-20 19:08:12,687 [INFO] Loading CSV: LLM_Test_Gen/data/task1_output.csv
+2026-05-20 19:08:12,706 [INFO]   -> 66 rows loaded
+2026-05-20 19:08:12,706 [INFO] Loading prompt template: LLM_Test_Gen/Scripts/prompt_template.txt
+2026-05-20 19:08:12,712 [INFO]   -> 5198 chars loaded
+2026-05-20 19:08:12,712 [INFO] ------------------------------------------------------------
+2026-05-20 19:08:12,713 [INFO] TASK 4.1: Generating tests via GPT-4o-mini
+2026-05-20 19:08:12,713 [INFO] ------------------------------------------------------------
+2026-05-20 19:08:12,926 [INFO] [1/66] Generating test for: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 19:08:18,589 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:18,594 [INFO]   -> Generated 481 chars
+2026-05-20 19:08:19,595 [INFO] [2/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 19:08:26,150 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:26,156 [INFO]   -> Generated 813 chars
+2026-05-20 19:08:27,156 [INFO] [3/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 19:08:33,474 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:33,479 [INFO]   -> Generated 1023 chars
+2026-05-20 19:08:34,480 [INFO] [4/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 19:08:40,380 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:40,383 [INFO]   -> Generated 928 chars
+2026-05-20 19:08:41,384 [INFO] [5/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 19:08:46,184 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:46,187 [INFO]   -> Generated 806 chars
+2026-05-20 19:08:47,188 [INFO] [6/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 19:08:51,842 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:51,845 [INFO]   -> Generated 862 chars
+2026-05-20 19:08:52,845 [INFO] [7/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 19:08:56,664 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:08:56,669 [INFO]   -> Generated 701 chars
+2026-05-20 19:08:57,670 [INFO] [8/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 19:09:03,724 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:03,741 [INFO]   -> Generated 799 chars
+2026-05-20 19:09:04,741 [INFO] [9/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 19:09:09,601 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:09,602 [INFO]   -> Generated 855 chars
+2026-05-20 19:09:10,603 [INFO] [10/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 19:09:16,076 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:16,082 [INFO]   -> Generated 897 chars
+2026-05-20 19:09:17,084 [INFO] [11/66] Generating test for: org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-20 19:09:21,939 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:21,946 [INFO]   -> Generated 795 chars
+2026-05-20 19:09:22,947 [INFO] [12/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-20 19:09:27,288 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:27,293 [INFO]   -> Generated 1111 chars
+2026-05-20 19:09:28,294 [INFO] [13/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 19:09:33,621 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:33,630 [INFO]   -> Generated 1056 chars
+2026-05-20 19:09:34,631 [INFO] [14/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 19:09:40,339 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:40,344 [INFO]   -> Generated 864 chars
+2026-05-20 19:09:41,345 [INFO] [15/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-20 19:09:47,565 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:47,569 [INFO]   -> Generated 819 chars
+2026-05-20 19:09:48,570 [INFO] [16/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-20 19:09:52,146 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:52,149 [INFO]   -> Generated 744 chars
+2026-05-20 19:09:53,150 [INFO] [17/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-20 19:09:57,878 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:09:57,884 [INFO]   -> Generated 665 chars
+2026-05-20 19:09:58,885 [INFO] [18/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-20 19:10:04,106 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:04,111 [INFO]   -> Generated 732 chars
+2026-05-20 19:10:05,111 [INFO] [19/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-20 19:10:10,552 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:10,558 [INFO]   -> Generated 699 chars
+2026-05-20 19:10:11,559 [INFO] [20/66] Generating test for: org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-20 19:10:16,109 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:16,116 [INFO]   -> Generated 673 chars
+2026-05-20 19:10:17,117 [INFO] [21/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:10:23,010 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:23,022 [INFO]   -> Generated 1060 chars
+2026-05-20 19:10:24,023 [INFO] [22/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:10:31,680 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:31,684 [INFO]   -> Generated 1565 chars
+2026-05-20 19:10:32,684 [INFO] [23/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:10:38,855 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:38,860 [INFO]   -> Generated 1483 chars
+2026-05-20 19:10:39,861 [INFO] [24/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-20 19:10:50,256 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:10:50,260 [INFO]   -> Generated 1893 chars
+2026-05-20 19:10:51,260 [INFO] [25/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-20 19:11:00,591 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:00,596 [INFO]   -> Generated 2199 chars
+2026-05-20 19:11:01,597 [INFO] [26/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-20 19:11:06,435 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:06,439 [INFO]   -> Generated 870 chars
+2026-05-20 19:11:07,441 [INFO] [27/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-20 19:11:18,376 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:18,381 [INFO]   -> Generated 1427 chars
+2026-05-20 19:11:19,383 [INFO] [28/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 19:11:24,205 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:24,210 [INFO]   -> Generated 1063 chars
+2026-05-20 19:11:25,211 [INFO] [29/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-20 19:11:31,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:31,061 [INFO]   -> Generated 1339 chars
+2026-05-20 19:11:32,061 [INFO] [30/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 19:11:41,315 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:41,316 [INFO]   -> Generated 2067 chars
+2026-05-20 19:11:42,317 [INFO] [31/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-20 19:11:48,317 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:48,321 [INFO]   -> Generated 1458 chars
+2026-05-20 19:11:49,322 [INFO] [32/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-20 19:11:55,350 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:55,355 [INFO]   -> Generated 1122 chars
+2026-05-20 19:11:56,356 [INFO] [33/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 19:11:59,676 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:11:59,676 [INFO]   -> Generated 777 chars
+2026-05-20 19:12:00,677 [INFO] [34/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-20 19:12:06,155 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:06,160 [INFO]   -> Generated 1182 chars
+2026-05-20 19:12:07,160 [INFO] [35/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-20 19:12:10,847 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:10,850 [INFO]   -> Generated 919 chars
+2026-05-20 19:12:11,851 [INFO] [36/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 19:12:15,315 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:15,316 [INFO]   -> Generated 939 chars
+2026-05-20 19:12:16,316 [INFO] [37/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 19:12:21,910 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:21,919 [INFO]   -> Generated 1361 chars
+2026-05-20 19:12:22,920 [INFO] [38/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 19:12:29,154 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:29,158 [INFO]   -> Generated 1511 chars
+2026-05-20 19:12:30,159 [INFO] [39/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-20 19:12:34,402 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:34,402 [INFO]   -> Generated 833 chars
+2026-05-20 19:12:35,404 [INFO] [40/66] Generating test for: org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-20 19:12:39,997 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:40,005 [INFO]   -> Generated 1171 chars
+2026-05-20 19:12:41,006 [INFO] [41/66] Generating test for: org.apache.commons.collections4.map.Values.iterator
+2026-05-20 19:12:45,551 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:45,557 [INFO]   -> Generated 1311 chars
+2026-05-20 19:12:46,557 [INFO] [42/66] Generating test for: org.apache.commons.collections4.map.Values.size
+2026-05-20 19:12:51,902 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:51,904 [INFO]   -> Generated 985 chars
+2026-05-20 19:12:52,905 [INFO] [43/66] Generating test for: org.apache.commons.collections4.map.Values.clear
+2026-05-20 19:12:56,744 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:12:56,752 [INFO]   -> Generated 914 chars
+2026-05-20 19:12:57,753 [INFO] [44/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-20 19:13:03,366 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:03,372 [INFO]   -> Generated 1540 chars
+2026-05-20 19:13:04,373 [INFO] [45/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-20 19:13:08,480 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:08,482 [INFO]   -> Generated 891 chars
+2026-05-20 19:13:09,483 [INFO] [46/66] Generating test for: org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-20 19:13:15,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:15,028 [INFO]   -> Generated 1325 chars
+2026-05-20 19:13:16,029 [INFO] [47/66] Generating test for: org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-20 19:13:22,844 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:22,851 [INFO]   -> Generated 1807 chars
+2026-05-20 19:13:23,852 [INFO] [48/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-20 19:13:30,818 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:30,823 [INFO]   -> Generated 1280 chars
+2026-05-20 19:13:31,824 [INFO] [49/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-20 19:13:37,253 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:37,258 [INFO]   -> Generated 1091 chars
+2026-05-20 19:13:38,259 [INFO] [50/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-20 19:13:44,417 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:44,423 [INFO]   -> Generated 1475 chars
+2026-05-20 19:13:45,424 [INFO] [51/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-20 19:13:53,693 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:13:53,705 [INFO]   -> Generated 1723 chars
+2026-05-20 19:13:54,706 [INFO] [52/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-20 19:14:00,056 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:00,061 [INFO]   -> Generated 1048 chars
+2026-05-20 19:14:01,061 [INFO] [53/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-20 19:14:08,512 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:08,524 [INFO]   -> Generated 1504 chars
+2026-05-20 19:14:09,525 [INFO] [54/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 19:14:15,877 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:15,882 [INFO]   -> Generated 1344 chars
+2026-05-20 19:14:16,883 [INFO] [55/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 19:14:24,072 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:24,075 [INFO]   -> Generated 1708 chars
+2026-05-20 19:14:25,075 [INFO] [56/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 19:14:32,814 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:32,816 [INFO]   -> Generated 1431 chars
+2026-05-20 19:14:33,817 [INFO] [57/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 19:14:45,178 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:45,186 [INFO]   -> Generated 2835 chars
+2026-05-20 19:14:46,186 [INFO] [58/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-20 19:14:52,265 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:52,270 [INFO]   -> Generated 1149 chars
+2026-05-20 19:14:53,271 [INFO] [59/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-20 19:14:59,550 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:14:59,556 [INFO]   -> Generated 1581 chars
+2026-05-20 19:15:00,557 [INFO] [60/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-20 19:15:07,452 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:07,464 [INFO]   -> Generated 1537 chars
+2026-05-20 19:15:08,464 [INFO] [61/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-20 19:15:15,671 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:15,675 [INFO]   -> Generated 1638 chars
+2026-05-20 19:15:16,676 [INFO] [62/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-20 19:15:23,950 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:23,958 [INFO]   -> Generated 1681 chars
+2026-05-20 19:15:24,959 [INFO] [63/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-20 19:15:31,498 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:31,503 [INFO]   -> Generated 1475 chars
+2026-05-20 19:15:32,504 [INFO] [64/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-20 19:15:41,126 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:41,128 [INFO]   -> Generated 1741 chars
+2026-05-20 19:15:42,129 [INFO] [65/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-20 19:15:46,218 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:46,222 [INFO]   -> Generated 954 chars
+2026-05-20 19:15:47,222 [INFO] [66/66] Generating test for: org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-20 19:15:51,566 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 19:15:51,570 [INFO]   -> Generated 850 chars
+2026-05-20 19:15:52,576 [INFO] Intermediate CSV saved: LLM_Test_Gen/data/task4_output_after_generation.csv
+2026-05-20 19:15:52,576 [INFO] ------------------------------------------------------------
+2026-05-20 19:15:52,576 [INFO] TASK 4.2: Formatting and saving test files
+2026-05-20 19:15:52,576 [INFO] ------------------------------------------------------------
+2026-05-20 19:15:52,577 [INFO] Clearing test directory for: codec
+2026-05-20 19:15:52,578 [INFO] Clearing test directory for: collections
+2026-05-20 19:15:52,579 [INFO] Clearing test directory for: compress
+2026-05-20 19:15:52,580 [INFO] [1/66] Formatting: org.apache.commons.codec.binary.StringUtils.equals
+2026-05-20 19:15:52,581 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_equals_1.java
+2026-05-20 19:15:52,582 [INFO] [2/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-20 19:15:52,582 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytes_1.java
+2026-05-20 19:15:52,583 [INFO] [3/66] Formatting: org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-20 19:15:52,583 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getByteBuffer_1.java
+2026-05-20 19:15:52,584 [INFO] [4/66] Formatting: org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-20 19:15:52,584 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getByteBufferUtf8_1.java
+2026-05-20 19:15:52,584 [INFO] [5/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-20 19:15:52,585 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesIso88591_1.java
+2026-05-20 19:15:52,585 [INFO] [6/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-20 19:15:52,586 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUnchecked_1.java
+2026-05-20 19:15:52,586 [INFO] [7/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-20 19:15:52,587 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUsAscii_1.java
+2026-05-20 19:15:52,587 [INFO] [8/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-20 19:15:52,588 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16_1.java
+2026-05-20 19:15:52,588 [INFO] [9/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-20 19:15:52,589 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16Be_1.java
+2026-05-20 19:15:52,589 [INFO] [10/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-20 19:15:52,590 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf16Le_1.java
+2026-05-20 19:15:52,590 [INFO] [11/66] Formatting: org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-20 19:15:52,591 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_getBytesUtf8_1.java
+2026-05-20 19:15:52,591 [INFO] [12/66] Formatting: org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-20 19:15:52,592 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newIllegalStateException_1.java
+2026-05-20 19:15:52,592 [INFO] [13/66] Formatting: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 19:15:52,593 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newString_1.java
+2026-05-20 19:15:52,593 [INFO] [14/66] Formatting: org.apache.commons.codec.binary.StringUtils.newString
+2026-05-20 19:15:52,593 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newString_2.java
+2026-05-20 19:15:52,594 [INFO] [15/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-20 19:15:52,594 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringIso88591_1.java
+2026-05-20 19:15:52,594 [INFO] [16/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-20 19:15:52,595 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUsAscii_1.java
+2026-05-20 19:15:52,595 [INFO] [17/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-20 19:15:52,596 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16_1.java
+2026-05-20 19:15:52,596 [INFO] [18/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-20 19:15:52,597 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16Be_1.java
+2026-05-20 19:15:52,597 [INFO] [19/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-20 19:15:52,598 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf16Le_1.java
+2026-05-20 19:15:52,598 [INFO] [20/66] Formatting: org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-20 19:15:52,598 [INFO]   -> Saved as: src\test\java\org\apache\commons\codec\binary\TestStringUtils_newStringUtf8_1.java
+2026-05-20 19:15:52,599 [INFO] [21/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:15:52,599 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_1.java
+2026-05-20 19:15:52,599 [INFO] [22/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:15:52,600 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_2.java
+2026-05-20 19:15:52,600 [INFO] [23/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-20 19:15:52,601 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_multiValueMap_3.java
+2026-05-20 19:15:52,601 [INFO] [24/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-20 19:15:52,602 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_writeObject_1.java
+2026-05-20 19:15:52,602 [INFO] [25/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-20 19:15:52,603 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_readObject_1.java
+2026-05-20 19:15:52,603 [INFO] [26/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-20 19:15:52,604 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_clear_1.java
+2026-05-20 19:15:52,604 [INFO] [27/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-20 19:15:52,605 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_removeMapping_1.java
+2026-05-20 19:15:52,605 [INFO] [28/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 19:15:52,605 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_containsValue_1.java
+2026-05-20 19:15:52,606 [INFO] [29/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-20 19:15:52,606 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_put_1.java
+2026-05-20 19:15:52,606 [INFO] [30/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 19:15:52,607 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_putAll_1.java
+2026-05-20 19:15:52,607 [INFO] [31/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-20 19:15:52,608 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_entrySet_1.java
+2026-05-20 19:15:52,608 [INFO] [32/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-20 19:15:52,609 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_values_1.java
+2026-05-20 19:15:52,609 [INFO] [33/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-20 19:15:52,610 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_containsValue_2.java
+2026-05-20 19:15:52,610 [INFO] [34/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-20 19:15:52,611 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_getCollection_1.java
+2026-05-20 19:15:52,611 [INFO] [35/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-20 19:15:52,611 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_size_1.java
+2026-05-20 19:15:52,612 [INFO] [36/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-20 19:15:52,612 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_putAll_2.java
+2026-05-20 19:15:52,612 [INFO] [37/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 19:15:52,613 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_iterator_1.java
+2026-05-20 19:15:52,613 [INFO] [38/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-20 19:15:52,614 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_iterator_2.java
+2026-05-20 19:15:52,614 [INFO] [39/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-20 19:15:52,615 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_totalSize_1.java
+2026-05-20 19:15:52,615 [INFO] [40/66] Formatting: org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-20 19:15:52,616 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestMultiValueMap_createCollection_1.java
+2026-05-20 19:15:52,616 [INFO] [41/66] Formatting: org.apache.commons.collections4.map.Values.iterator
+2026-05-20 19:15:52,617 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_iterator_1.java
+2026-05-20 19:15:52,617 [INFO] [42/66] Formatting: org.apache.commons.collections4.map.Values.size
+2026-05-20 19:15:52,618 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_size_1.java
+2026-05-20 19:15:52,618 [INFO] [43/66] Formatting: org.apache.commons.collections4.map.Values.clear
+2026-05-20 19:15:52,618 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValues_clear_1.java
+2026-05-20 19:15:52,619 [INFO] [44/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-20 19:15:52,619 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_remove_1.java
+2026-05-20 19:15:52,619 [INFO] [45/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-20 19:15:52,620 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_hasNext_1.java
+2026-05-20 19:15:52,621 [INFO] [46/66] Formatting: org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-20 19:15:52,622 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestValuesIterator_next_1.java
+2026-05-20 19:15:52,622 [INFO] [47/66] Formatting: org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-20 19:15:52,623 [INFO]   -> Saved as: src\test\java\org\apache\commons\collections4\map\TestReflectionFactory_create_1.java
+2026-05-20 19:15:52,623 [INFO] [48/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-20 19:15:52,623 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseOctal_1.java
+2026-05-20 19:15:52,624 [INFO] [49/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-20 19:15:52,624 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseOctalOrBinary_1.java
+2026-05-20 19:15:52,625 [INFO] [50/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-20 19:15:52,625 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBinaryLong_1.java
+2026-05-20 19:15:52,626 [INFO] [51/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-20 19:15:52,627 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBinaryBigInteger_1.java
+2026-05-20 19:15:52,627 [INFO] [52/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-20 19:15:52,628 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseBoolean_1.java
+2026-05-20 19:15:52,628 [INFO] [53/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-20 19:15:52,629 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_exceptionMessage_1.java
+2026-05-20 19:15:52,629 [INFO] [54/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 19:15:52,630 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseName_1.java
+2026-05-20 19:15:52,630 [INFO] [55/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-20 19:15:52,631 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_parseName_2.java
+2026-05-20 19:15:52,631 [INFO] [56/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 19:15:52,632 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatNameBytes_1.java
+2026-05-20 19:15:52,632 [INFO] [57/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-20 19:15:52,633 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatNameBytes_2.java
+2026-05-20 19:15:52,634 [INFO] [58/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-20 19:15:52,634 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatUnsignedOctalString_1.java
+2026-05-20 19:15:52,635 [INFO] [59/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-20 19:15:52,635 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatOctalBytes_1.java
+2026-05-20 19:15:52,636 [INFO] [60/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-20 19:15:52,636 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongOctalBytes_1.java
+2026-05-20 19:15:52,637 [INFO] [61/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-20 19:15:52,638 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongOctalOrBinaryBytes_1.java
+2026-05-20 19:15:52,638 [INFO] [62/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-20 19:15:52,639 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatLongBinary_1.java
+2026-05-20 19:15:52,639 [INFO] [63/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-20 19:15:52,640 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatBigIntegerBinary_1.java
+2026-05-20 19:15:52,640 [INFO] [64/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-20 19:15:52,641 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_formatCheckSumOctalBytes_1.java
+2026-05-20 19:15:52,641 [INFO] [65/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-20 19:15:52,642 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_computeCheckSum_1.java
+2026-05-20 19:15:52,643 [INFO] [66/66] Formatting: org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-20 19:15:52,643 [INFO]   -> Saved as: src\test\java\org\apache\commons\compress\archivers\tar\TestTarUtils_verifyCheckSum_1.java
+2026-05-20 19:15:52,648 [INFO] Final CSV saved: LLM_Test_Gen/data/task4_output.csv
+2026-05-20 19:15:52,648 [INFO] ============================================================
+2026-05-20 19:15:52,648 [INFO] SUMMARY
+2026-05-20 19:15:52,648 [INFO] ============================================================
+2026-05-20 19:15:52,649 [INFO] Total focal methods/units: 66
+2026-05-20 19:15:52,649 [INFO] Tests saved successfully:  66
+2026-05-20 19:15:52,649 [INFO] Failed/skipped:            0
+2026-05-20 19:15:52,652 [INFO]   codec: 20 tests saved
+2026-05-20 19:15:52,654 [INFO]   collections: 27 tests saved
+2026-05-20 19:15:52,656 [INFO]   compress: 19 tests saved

@@ -34,7 +34,7 @@ from pathlib import Path
 
 CONFIG = {
     # Your OpenAI API key
-    "api_key": "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",
+    "api_key": "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",
 
     # Path to your Task 1 CSV
     "input_csv": "LLM_Test_Gen/data/task1_output.csv",
@@ -59,9 +59,9 @@ CONFIG = {
     # Test source directories relative to project root
     # Defects4J projects vary — adjust if needed
     "test_src_dirs": {
-        "codec":       "defects4jprojects/Codec_18_buggy/src/test/java/org/apache/commons/codec",
-        "collections": "defects4jprojects/Collections_27_buggy/src/test/java",
-        "compress":    "defects4jprojects/Compress_45_buggy/src/test/java/org/apache/commons/compress",
+        "codec":       "src/test/java",
+        "collections": "src/test/java",
+        "compress":    "src/test/java",
     },
 
     # Package paths for generated tests (where .java files will be saved)

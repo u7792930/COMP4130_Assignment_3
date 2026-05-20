@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="resources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/moby.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/password-encrypted.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/utf8-7zip-test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/bzip2-zip.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-351.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-214_unix_symlinks.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/SHRUNK.ZIP!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-211_uid_gid_zip_test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/OSX_ArchiveWithNestedArchive.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-219.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/utf8-winzip-test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-228.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/test-winzip.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/imploding-4Kdict-2trees.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/archive_with_bytes_after_data.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/imploding-8Kdict-3trees.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-379.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-264.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/archive_with_trailer.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-210_unix_time_zip_test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/bla.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-208.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-227.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/moby-imploded.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/COMPRESS-189.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/mixed.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/invalid-zip.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/bla.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Compress_45_buggy/src/test/resources/ordertest.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
