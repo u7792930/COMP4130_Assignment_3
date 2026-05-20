@@ -113,7 +113,7 @@ public class Task3PromptFiller {
         return newRow;
     }
 
-    //pad  row with empty strings up to minLength
+    //pad row with empty strings up to minLength
     private static String[] padRow(String[] row, int minLength) {
         if (row.length >= minLength) return row;
         String[] padded = new String[minLength];
