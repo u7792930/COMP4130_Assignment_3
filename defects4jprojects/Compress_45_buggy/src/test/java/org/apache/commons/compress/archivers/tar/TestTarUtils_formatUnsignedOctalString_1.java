@@ -4,7 +4,6 @@ import org.apache.commons.compress.archivers.tar.TarUtils;
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
-import static org.junit.Assert.*;
 
 public class TestTarUtils_formatUnsignedOctalString_1 {
 
@@ -17,10 +16,26 @@ public class TestTarUtils_formatUnsignedOctalString_1 {
     }
 
     @Test
+    public void test_formatUnsignedOctalString_smallValue() {
+        byte[] buffer = new byte[5];
+        TarUtils.formatUnsignedOctalString(7, buffer, 0, 5);
+        byte[] expected = new byte[]{'0', '0', '0', '0', '7'};
+        assertArrayEquals(expected, buffer);
+    }
+
+    @Test
+    public void test_formatUnsignedOctalString_mediumValue() {
+        byte[] buffer = new byte[5];
+        TarUtils.formatUnsignedOctalString(63, buffer, 0, 5);
+        byte[] expected = new byte[]{'0', '0', '0', '7', '7'};
+        assertArrayEquals(expected, buffer);
+    }
+
+    @Test
     public void test_formatUnsignedOctalString_largeValue() {
         byte[] buffer = new byte[5];
         TarUtils.formatUnsignedOctalString(255, buffer, 0, 5);
-        byte[] expected = new byte[]{'0', '0', '0', '3', '7'};
+        byte[] expected = new byte[]{'0', '0', '3', '7', '7'};
         assertArrayEquals(expected, buffer);
     }
 
@@ -33,5 +48,21 @@ public class TestTarUtils_formatUnsignedOctalString_1 {
         } catch (IllegalArgumentException e) {
             // Expected exception
         }
+    }
+
+    @Test
+    public void test_formatUnsignedOctalString_exactFit() {
+        byte[] buffer = new byte[5];
+        TarUtils.formatUnsignedOctalString(2047, buffer, 0, 5);
+        byte[] expected = new byte[]{'0', '3', '7', '7', '7'};
+        assertArrayEquals(expected, buffer);
+    }
+
+    @Test
+    public void test_formatUnsignedOctalString_leadingZeros() {
+        byte[] buffer = new byte[5];
+        TarUtils.formatUnsignedOctalString(1, buffer, 0, 5);
+        byte[] expected = new byte[]{'0', '0', '0', '0', '1'};
+        assertArrayEquals(expected, buffer);
     }
 }

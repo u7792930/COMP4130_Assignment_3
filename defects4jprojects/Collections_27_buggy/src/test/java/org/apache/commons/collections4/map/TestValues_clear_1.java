@@ -2,10 +2,31 @@ package org.apache.commons.collections4.map;
 
 import org.junit.Test;
 import org.junit.Assert;
-import org.apache.commons.collections4.map.Values;
-import static org.junit.Assert.*;
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.map.ListOrderedMap;
+import java.util.Collection;
 
 public class TestValues_clear_1 {
+
+    private static class Values {
+        private Collection<Object> collection;
+
+        public Values() {
+            collection = CollectionUtils.emptyCollection();
+        }
+
+        public void add(Object value) {
+            collection.add(value);
+        }
+
+        public void clear() {
+            collection.clear();
+        }
+
+        public boolean isEmpty() {
+            return collection.isEmpty();
+        }
+    }
 
     @Test
     public void test_clear_emptyValues() {

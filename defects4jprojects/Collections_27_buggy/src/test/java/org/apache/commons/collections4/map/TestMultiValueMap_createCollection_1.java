@@ -22,8 +22,6 @@ public class TestMultiValueMap_createCollection_1 {
     public void test_createCollection_positiveSize() {
         Collection<String> collection = multiValueMap.createCollection(5);
         Assert.assertNotNull(collection);
-        // Since the specific type of Collection is not defined,
-        // we assume it can hold elements and check size.
         Assert.assertTrue(collection.isEmpty());
     }
 

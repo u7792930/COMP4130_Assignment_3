@@ -4,6 +4,7 @@ import org.apache.commons.collections4.map.MultiValueMap;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 import static org.junit.Assert.*;
@@ -15,7 +16,7 @@ public class TestMultiValueMap_entrySet_1 {
         MultiValueMap<String, String> map = new MultiValueMap<>();
         map.put("key1", "value1");
         map.put("key1", "value2");
-        Set<Map.Entry<String, Collection<String>>> entrySet = map.entrySet();
+        Set<Map.Entry<String, Object>> entrySet = map.entrySet();
         Assert.assertNotNull(entrySet);
         Assert.assertEquals(1, entrySet.size());
     }
@@ -23,7 +24,7 @@ public class TestMultiValueMap_entrySet_1 {
     @Test
     public void test_entrySet_emptyMap() {
         MultiValueMap<String, String> map = new MultiValueMap<>();
-        Set<Map.Entry<String, Collection<String>>> entrySet = map.entrySet();
+        Set<Map.Entry<String, Object>> entrySet = map.entrySet();
         Assert.assertNotNull(entrySet);
         Assert.assertEquals(0, entrySet.size());
     }
@@ -32,13 +33,13 @@ public class TestMultiValueMap_entrySet_1 {
     public void test_entrySet_singleEntry() {
         MultiValueMap<String, String> map = new MultiValueMap<>();
         map.put("key1", "value1");
-        Set<Map.Entry<String, Collection<String>>> entrySet = map.entrySet();
+        Set<Map.Entry<String, Object>> entrySet = map.entrySet();
         Assert.assertNotNull(entrySet);
         Assert.assertEquals(1, entrySet.size());
-        for (Map.Entry<String, Collection<String>> entry : entrySet) {
+        for (Map.Entry<String, Object> entry : entrySet) {
             Assert.assertEquals("key1", entry.getKey());
-            Assert.assertEquals(1, entry.getValue().size());
-            Assert.assertTrue(entry.getValue().contains("value1"));
+            Assert.assertEquals(1, ((Collection<String>) entry.getValue()).size());
+            Assert.assertTrue(((Collection<String>) entry.getValue()).contains("value1"));
         }
     }
 }

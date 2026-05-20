@@ -5,26 +5,29 @@ import org.junit.Assert;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import static org.junit.Assert.*;
+import java.io.ByteArrayOutputStream;
 
 public class TestMultiValueMap_writeObject_1 {
 
     @Test
     public void test_writeObject_ioExceptionThrown() {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         ObjectOutputStream out = null;
         try {
-            // Create a mock ObjectOutputStream that throws IOException
-            out = new ObjectOutputStream() {
-                @Override
-                public void writeObject(Object obj) throws IOException {
-                    throw new IOException("Test IOException");
+            out = new ObjectOutputStream(byteArrayOutputStream) {
+                // Use a different method to simulate the exception without overriding final method
+                public void writeStreamHeader() throws IOException {
+                    throw new IOException("Forced IOException");
                 }
             };
             MultiValueMap<String, String> map = new MultiValueMap<>();
-            map.writeObject(out);
+            map.getClass().getDeclaredMethod("writeObject", ObjectOutputStream.class).setAccessible(true);
+            map.getClass().getDeclaredMethod("writeObject", ObjectOutputStream.class).invoke(map, out);
             Assert.fail("Expected IOException to be thrown");
         } catch (IOException e) {
             // Expected exception
+        } catch (Exception e) {
+            Assert.fail("Unexpected exception: " + e.getMessage());
         } finally {
             if (out != null) {
                 try {
@@ -37,19 +40,19 @@ public class TestMultiValueMap_writeObject_1 {
     }
 
     @Test
-    public void test_writeObject_defaultWriteObjectCalled() {
-        // This is a test to verify that defaultWriteObject is called correctly
-        // However, since it's a private method and cannot be directly tested,
-        // we would typically need a way to validate the side effects.
-        // This test would validate if the output is as expected after calling writeObject.
-        // In a real scenario, we would use a mocking framework to verify this.
-    }
+    public void test_writeObject_successfulWrite() throws Exception {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ObjectOutputStream out = new ObjectOutputStream(byteArrayOutputStream);
+        MultiValueMap<String, String> map = new MultiValueMap<>();
+        map.put("key1", "value1");
+        map.put("key2", "value2");
+        map.getClass().getDeclaredMethod("writeObject", ObjectOutputStream.class).setAccessible(true);
+        map.getClass().getDeclaredMethod("writeObject", ObjectOutputStream.class).invoke(map, out);
+        out.close();
 
-    @Test
-    public void test_writeObject_successfulWrite() {
-        // This test would simulate a successful write operation
-        // Since we cannot directly access private methods,
-        // we can validate the state of the MultiValueMap before and after writing.
-        // This test would typically involve more complex setup and verification.
+        // Validate that the output stream contains the expected serialized data
+        // This is a placeholder for actual validation logic, which may require deserialization
+        // and checking the contents of the MultiValueMap.
+        Assert.assertTrue(byteArrayOutputStream.size() > 0);
     }
 }

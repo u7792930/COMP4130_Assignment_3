@@ -1,0 +1,372 @@
+2026-05-21 09:01:34,487 [INFO] ======================================================================
+2026-05-21 09:01:34,487 [INFO] Task 5 Pipeline - Feedback Loop
+2026-05-21 09:01:34,487 [INFO] ======================================================================
+2026-05-21 09:01:34,493 [INFO] Loaded 66 rows from /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task4_output.csv
+2026-05-21 09:01:34,494 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:34,494 [INFO] [1/66] org.apache.commons.codec.binary.StringUtils.equals
+2026-05-21 09:01:34,767 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:35,251 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:35,253 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:35,253 [INFO] [2/66] org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-21 09:01:35,428 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:36,658 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:36,659 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:37,665 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:37,666 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:37,667 [INFO] [3/66] org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-21 09:01:37,866 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:38,124 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:38,125 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:39,130 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:39,131 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:39,131 [INFO] [4/66] org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-21 09:01:39,320 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:39,715 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:39,717 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:39,717 [INFO] [5/66] org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-21 09:01:39,880 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:40,289 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:40,290 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:40,290 [INFO] [6/66] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-21 09:01:40,477 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:40,870 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:40,872 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:40,872 [INFO] [7/66] org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-21 09:01:41,035 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:41,423 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:41,425 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:41,425 [INFO] [8/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-21 09:01:41,588 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:41,976 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:01:41,976 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:01:42,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:42,199 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:43,207 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:43,207 [INFO] [9/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-21 09:01:43,387 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:43,778 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:43,779 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:43,779 [INFO] [10/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-21 09:01:43,947 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:44,346 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:01:44,347 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:01:44,606 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:44,608 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:45,616 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:45,616 [INFO] [11/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-21 09:01:45,806 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:46,204 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:46,205 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:46,205 [INFO] [12/66] org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-21 09:01:46,372 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:46,577 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:46,578 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:47,583 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:47,585 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:47,585 [INFO] [13/66] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 09:01:47,784 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:48,011 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:48,012 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:49,017 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:49,019 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:49,019 [INFO] [14/66] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 09:01:49,216 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:49,607 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:49,609 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:49,609 [INFO] [15/66] org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-21 09:01:49,771 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:50,147 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:50,149 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:50,149 [INFO] [16/66] org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-21 09:01:50,335 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:50,727 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:50,729 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:50,729 [INFO] [17/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-21 09:01:50,891 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:51,287 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:01:51,287 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:01:51,572 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:51,574 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:52,584 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:52,585 [INFO] [18/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-21 09:01:52,781 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:53,170 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:53,172 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:53,172 [INFO] [19/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-21 09:01:53,335 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:53,719 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:53,721 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:53,721 [INFO] [20/66] org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-21 09:01:53,884 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:01:54,274 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:01:54,276 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:54,276 [INFO] [21/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 09:01:54,453 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:54,732 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:54,734 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:55,738 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:55,739 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:55,739 [INFO] [22/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 09:01:55,950 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:56,281 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:56,282 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:57,284 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:57,285 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:57,285 [INFO] [23/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 09:01:57,492 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:57,817 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:57,818 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:01:58,823 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:01:58,824 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:01:58,825 [INFO] [24/66] org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-21 09:01:59,047 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:01:59,271 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:01:59,272 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:00,278 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:00,279 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:00,280 [INFO] [25/66] org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-21 09:02:00,518 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:00,726 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:00,726 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:01,731 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:01,733 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:01,733 [INFO] [26/66] org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-21 09:02:01,946 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:02,341 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:02,343 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:02,343 [INFO] [27/66] org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-21 09:02:02,523 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:02,895 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:02,897 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:02,897 [INFO] [28/66] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 09:02:03,074 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:03,445 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:03,446 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:03,446 [INFO] [29/66] org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-21 09:02:03,624 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:03,998 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:03,998 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:04,218 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:04,219 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:05,231 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:05,231 [INFO] [30/66] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 09:02:05,455 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:05,673 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:05,673 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:06,679 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:06,680 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:06,680 [INFO] [31/66] org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-21 09:02:06,892 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:07,095 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:07,096 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:08,097 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:08,099 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:08,099 [INFO] [32/66] org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-21 09:02:08,309 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:08,662 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:08,664 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:08,664 [INFO] [33/66] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 09:02:08,837 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:09,193 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:09,194 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:09,194 [INFO] [34/66] org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-21 09:02:09,372 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:09,730 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:09,731 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:09,731 [INFO] [35/66] org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-21 09:02:09,906 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:10,282 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:10,282 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:10,503 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:10,503 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:11,515 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:11,515 [INFO] [36/66] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 09:02:11,730 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:12,101 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:12,102 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:12,102 [INFO] [37/66] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 09:02:12,200 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:12,488 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:12,489 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:13,491 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:13,493 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:13,493 [INFO] [38/66] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 09:02:13,707 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:14,117 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:14,119 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:14,119 [INFO] [39/66] org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-21 09:02:14,295 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:14,659 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:14,660 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:14,660 [INFO] [40/66] org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-21 09:02:14,839 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:15,202 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:15,202 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:15,418 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:15,419 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:16,430 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:16,430 [INFO] [41/66] org.apache.commons.collections4.map.Values.iterator
+2026-05-21 09:02:16,629 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:16,901 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:16,903 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:17,908 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:17,909 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:17,909 [INFO] [42/66] org.apache.commons.collections4.map.Values.size
+2026-05-21 09:02:18,113 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:18,320 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:18,321 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:19,323 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:19,325 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:19,325 [INFO] [43/66] org.apache.commons.collections4.map.Values.clear
+2026-05-21 09:02:19,517 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:19,738 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:19,739 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:20,744 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:20,745 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:20,745 [INFO] [44/66] org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-21 09:02:20,847 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:21,104 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:21,105 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:22,108 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:22,109 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:22,110 [INFO] [45/66] org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-21 09:02:22,304 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:22,510 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:22,510 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:23,514 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:23,515 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:23,515 [INFO] [46/66] org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-21 09:02:23,707 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:23,917 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:23,918 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:24,923 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:24,925 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:24,925 [INFO] [47/66] org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-21 09:02:25,121 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:25,336 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:25,336 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:26,342 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:26,343 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:26,344 [INFO] [48/66] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-21 09:02:26,547 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:26,995 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:26,997 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:26,997 [INFO] [49/66] org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-21 09:02:27,192 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:27,560 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:27,560 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:27,790 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:27,791 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:28,802 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:28,803 [INFO] [50/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-21 09:02:28,995 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:29,216 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:29,217 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:30,223 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:30,224 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:30,224 [INFO] [51/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-21 09:02:30,419 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:30,636 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:30,636 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:31,642 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:31,643 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:31,643 [INFO] [52/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-21 09:02:31,840 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:32,203 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:32,203 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:32,409 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:32,410 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:33,419 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:33,419 [INFO] [53/66] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-21 09:02:33,582 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:33,804 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:33,805 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:34,810 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:34,811 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:34,812 [INFO] [54/66] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 09:02:35,013 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:35,366 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:35,366 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:35,603 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:35,604 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:36,615 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:36,615 [INFO] [55/66] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 09:02:36,808 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:37,018 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:37,019 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:38,024 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:38,026 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:38,026 [INFO] [56/66] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 09:02:38,222 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:38,600 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:38,602 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:38,602 [INFO] [57/66] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 09:02:38,789 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:39,068 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:39,070 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:40,075 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:40,077 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:40,077 [INFO] [58/66] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-21 09:02:40,270 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:40,751 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:40,751 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:40,961 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:40,962 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:41,973 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:41,973 [INFO] [59/66] org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-21 09:02:42,180 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:42,630 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:42,630 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:42,878 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:42,880 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:43,895 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:43,895 [INFO] [60/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-21 09:02:44,109 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:44,539 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:44,539 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:44,761 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:44,762 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:45,773 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:45,773 [INFO] [61/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-21 09:02:45,975 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:46,339 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:46,339 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:46,559 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:46,560 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:47,569 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:47,569 [INFO] [62/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-21 09:02:47,763 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:47,982 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:47,982 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:48,987 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:48,989 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:48,989 [INFO] [63/66] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-21 09:02:49,184 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 09:02:49,418 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:49,420 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:50,425 [INFO]     Phase A: NOT compiled after 1 iters
+2026-05-21 09:02:50,427 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:50,427 [INFO] [64/66] org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-21 09:02:50,626 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:50,997 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:50,997 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:51,233 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:51,233 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:52,243 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:52,243 [INFO] [65/66] org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-21 09:02:52,442 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:52,797 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 09:02:52,799 [INFO] ----------------------------------------------------------------------
+2026-05-21 09:02:52,799 [INFO] [66/66] org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-21 09:02:52,959 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 09:02:53,328 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 09:02:53,328 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 09:02:53,600 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-21 09:02:53,601 [ERROR] LLM call failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************o9YA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-05-21 09:02:54,626 [INFO] ======================================================================
+2026-05-21 09:02:54,626 [INFO] SUMMARY
+2026-05-21 09:02:54,626 [INFO] ======================================================================
+2026-05-21 09:02:54,626 [INFO] Total tests:           66
+2026-05-21 09:02:54,626 [INFO] Compiled (runnable):   40
+2026-05-21 09:02:54,626 [INFO] Passed (no failures):  25
+2026-05-21 09:02:54,626 [INFO] Output CSV:            /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task5_output.csv

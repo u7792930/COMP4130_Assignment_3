@@ -27,4 +27,20 @@ public class TestStringUtils_getBytesUtf16Le_1 {
         byte[] expected = new byte[]{72, 0, 101, 0, 108, 0, 108, 0, 111, 0}; // UTF-16LE encoding of "Hello"
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void test_getBytesUtf16Le_specialCharacters() {
+        String input = "你好"; // Chinese characters
+        byte[] result = StringUtils.getBytesUtf16Le(input);
+        byte[] expected = new byte[]{-28, -72, -83, 0, -27, -101, -67, 0}; // UTF-16LE encoding of "你好"
+        Assert.assertArrayEquals(expected, result);
+    }
+
+    @Test
+    public void test_getBytesUtf16Le_singleCharacter() {
+        String input = "A"; // Single character
+        byte[] result = StringUtils.getBytesUtf16Le(input);
+        byte[] expected = new byte[]{65, 0}; // UTF-16LE encoding of "A"
+        Assert.assertArrayEquals(expected, result);
+    }
 }

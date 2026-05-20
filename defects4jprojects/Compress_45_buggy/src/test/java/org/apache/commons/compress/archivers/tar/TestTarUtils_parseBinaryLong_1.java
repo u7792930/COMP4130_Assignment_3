@@ -13,7 +13,7 @@ public class TestTarUtils_parseBinaryLong_1 {
         boolean negative = false;
 
         try {
-            TarUtils.parseBinaryLong(buffer, offset, length, negative);
+            invokeParseBinaryLong(buffer, offset, length, negative);
             fail("Expected IllegalArgumentException for length exceeding limit");
         } catch (IllegalArgumentException e) {
             assertEquals("At offset 0, 10 byte binary number exceeds maximum signed long value", e.getMessage());
@@ -27,7 +27,7 @@ public class TestTarUtils_parseBinaryLong_1 {
         int length = 3;
         boolean negative = true;
 
-        long result = TarUtils.parseBinaryLong(buffer, offset, length, negative);
+        long result = invokeParseBinaryLong(buffer, offset, length, negative);
         assertEquals(-258, result); // (1*256 + 2) is 258, negative makes it -258
     }
 
@@ -38,7 +38,39 @@ public class TestTarUtils_parseBinaryLong_1 {
         int length = 3;
         boolean negative = false;
 
-        long result = TarUtils.parseBinaryLong(buffer, offset, length, negative);
+        long result = invokeParseBinaryLong(buffer, offset, length, negative);
         assertEquals(258, result); // (1*256 + 2) is 258
+    }
+
+    @Test
+    public void test_parseBinaryLong_zeroValue() {
+        byte[] buffer = new byte[] {0, 0, 0}; // Example binary representation for zero
+        int offset = 0;
+        int length = 3;
+        boolean negative = false;
+
+        long result = invokeParseBinaryLong(buffer, offset, length, negative);
+        assertEquals(0, result); // Zero should return zero
+    }
+
+    @Test
+    public void test_parseBinaryLong_negativeZeroValue() {
+        byte[] buffer = new byte[] {0, 0, 0}; // Example binary representation for zero
+        int offset = 0;
+        int length = 3;
+        boolean negative = true;
+
+        long result = invokeParseBinaryLong(buffer, offset, length, negative);
+        assertEquals(0, result); // Negative zero should also return zero
+    }
+
+    private long invokeParseBinaryLong(byte[] buffer, int offset, int length, boolean negative) {
+        try {
+            java.lang.reflect.Method method = TarUtils.class.getDeclaredMethod("parseBinaryLong", byte[].class, int.class, int.class, boolean.class);
+            method.setAccessible(true);
+            return (long) method.invoke(null, buffer, offset, length, negative);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

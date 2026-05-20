@@ -1,16 +1,18 @@
 package org.apache.commons.collections4.map;
 
-import org.apache.commons.collections4.map.ValuesIterator;
+import org.apache.commons.collections4.IteratorUtils;
 import org.junit.Assert;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.HashMap;
 
 public class TestValuesIterator_remove_1 {
 
     @Test
     public void test_remove_emptyValuesIterator() {
-        ValuesIterator<String, String> valuesIterator = new ValuesIterator<>(...); // Initialize with appropriate parameters
-        // Assuming the iterator is empty at this point
+        Map<String, String> map = new HashMap<>();
+        Iterator<String> valuesIterator = IteratorUtils.emptyIterator();
         try {
             valuesIterator.remove();
             Assert.fail("Expected an IllegalStateException to be thrown");
@@ -21,19 +23,24 @@ public class TestValuesIterator_remove_1 {
 
     @Test
     public void test_remove_nonEmptyValuesIterator() {
-        ValuesIterator<String, String> valuesIterator = new ValuesIterator<>(...); // Initialize with non-empty parameters
+        Map<String, String> map = new HashMap<>();
+        map.put("key1", "value1");
+        map.put("key2", "value2");
+        Iterator<String> valuesIterator = map.values().iterator();
         valuesIterator.next(); // Move to the first element
         valuesIterator.remove(); // Should remove the current element
-        // Add assertions to verify the expected state after removal
+        Assert.assertFalse(map.containsValue("value1")); // Verify the expected state after removal
     }
 
     @Test
     public void test_remove_afterNext() {
-        ValuesIterator<String, String> valuesIterator = new ValuesIterator<>(...); // Initialize with appropriate parameters
+        Map<String, String> map = new HashMap<>();
+        map.put("key1", "value1");
+        map.put("key2", "value2");
+        Iterator<String> valuesIterator = map.values().iterator();
         valuesIterator.next(); // Move to the first element
         valuesIterator.remove(); // Should remove the current element
-        // Confirm the iterator state here
         Assert.assertTrue(valuesIterator.hasNext()); // Should still have more elements
-        // Additional assertions to verify the state of the underlying collection
+        Assert.assertFalse(map.containsValue("value1")); // Verify the state of the underlying collection
     }
 }

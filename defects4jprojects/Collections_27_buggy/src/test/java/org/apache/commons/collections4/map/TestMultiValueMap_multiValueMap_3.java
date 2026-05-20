@@ -5,9 +5,11 @@ import org.apache.commons.collections4.Factory;
 import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Collection;
+import java.util.ArrayList;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 public class TestMultiValueMap_multiValueMap_3 {
 

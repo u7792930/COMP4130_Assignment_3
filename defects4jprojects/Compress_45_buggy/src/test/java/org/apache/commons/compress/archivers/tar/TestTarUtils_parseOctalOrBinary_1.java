@@ -29,4 +29,29 @@ public class TestTarUtils_parseOctalOrBinary_1 {
             // Expected exception
         }
     }
+
+    @Test
+    public void test_parseOctalOrBinary_validBinaryNegative() {
+        byte[] buffer = { (byte) 0xFF, 0b00000001, 0b00000000 }; // Binary representation for -256
+        long result = TarUtils.parseOctalOrBinary(buffer, 0, buffer.length);
+        assertEquals(-256L, result);
+    }
+
+    @Test
+    public void test_parseOctalOrBinary_tooShortBinary() {
+        byte[] buffer = { (byte) 0x80, 0b00000001 }; // Binary representation for 1, but too short
+        long result = TarUtils.parseOctalOrBinary(buffer, 0, buffer.length);
+        assertEquals(1L, result);
+    }
+
+    @Test
+    public void test_parseOctalOrBinary_invalidTrailingSpace() {
+        byte[] buffer = { '7', '5', '0' }; // Missing trailing space
+        try {
+            TarUtils.parseOctalOrBinary(buffer, 0, buffer.length);
+            fail("Expected IllegalArgumentException for missing trailing space");
+        } catch (IllegalArgumentException e) {
+            // Expected exception
+        }
+    }
 }

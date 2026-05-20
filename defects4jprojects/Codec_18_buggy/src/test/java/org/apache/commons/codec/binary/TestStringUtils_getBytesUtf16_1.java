@@ -26,4 +26,20 @@ public class TestStringUtils_getBytesUtf16_1 {
         byte[] result = StringUtils.getBytesUtf16(input);
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void test_getBytesUtf16_specialCharacters() {
+        String input = "你好"; // UTF-16 encoding of "你好"
+        byte[] expected = new byte[]{-24, -100, -100, 0, -22, -70, -98, 0}; 
+        byte[] result = StringUtils.getBytesUtf16(input);
+        Assert.assertArrayEquals(expected, result);
+    }
+
+    @Test
+    public void test_getBytesUtf16_singleCharacter() {
+        String input = "A"; // UTF-16 encoding of "A"
+        byte[] expected = new byte[]{65, 0}; 
+        byte[] result = StringUtils.getBytesUtf16(input);
+        Assert.assertArrayEquals(expected, result);
+    }
 }

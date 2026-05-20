@@ -11,7 +11,7 @@ public class TestMultiValueMap_iterator_1 {
 
     private MultiValueMap<String, String> map;
 
-    public MultiValueMapTest() {
+    public TestMultiValueMap_iterator_1() {
         map = new MultiValueMap<>();
     }
 

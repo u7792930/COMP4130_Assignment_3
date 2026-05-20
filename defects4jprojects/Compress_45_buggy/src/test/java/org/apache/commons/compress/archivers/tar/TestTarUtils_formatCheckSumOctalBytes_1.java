@@ -37,18 +37,34 @@ public class TestTarUtils_formatCheckSumOctalBytes_1 {
     }
 
     @Test
-    public void test_formatCheckSumOctalBytes_negativeValue() {
+    public void test_formatCheckSumOctalBytes_zeroValue() {
         byte[] buffer = new byte[10];
         int offset = 0;
         int length = 10;
-        long value = -1234;
+        long value = 0;
 
         int result = TarUtils.formatCheckSumOctalBytes(value, buffer, offset, length);
 
         assertEquals(10, result);
         assertEquals(0, buffer[8]); // Check for NUL
         assertEquals((byte) ' ', buffer[9]); // Check for space
-        // Check the octal representation of the negative value
-        assertArrayEquals(new byte[] {'-', '0', '0', '0', '0', '0', '2', '3', 0, ' '}, buffer);
+        // Check the octal representation of zero
+        assertArrayEquals(new byte[] {'0', '0', '0', '0', '0', '0', '0', '0', 0, ' '}, buffer);
+    }
+
+    @Test
+    public void test_formatCheckSumOctalBytes_largeValue() {
+        byte[] buffer = new byte[10];
+        int offset = 0;
+        int length = 10;
+        long value = 123456;
+
+        int result = TarUtils.formatCheckSumOctalBytes(value, buffer, offset, length);
+
+        assertEquals(10, result);
+        assertEquals(0, buffer[8]); // Check for NUL
+        assertEquals((byte) ' ', buffer[9]); // Check for space
+        // Check the octal representation of the large value
+        assertArrayEquals(new byte[] {'0', '0', '0', '0', '0', '3', '7', '2', 0, ' '}, buffer);
     }
 }

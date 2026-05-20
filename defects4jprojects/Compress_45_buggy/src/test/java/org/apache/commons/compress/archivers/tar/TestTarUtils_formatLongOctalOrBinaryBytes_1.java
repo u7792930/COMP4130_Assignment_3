@@ -15,7 +15,7 @@ public class TestTarUtils_formatLongOctalOrBinaryBytes_1 {
         long value = 5; // A positive value that fits as octal
         int result = TarUtils.formatLongOctalOrBinaryBytes(value, buf, offset, length);
         Assert.assertEquals(offset + length, result);
-        String expectedOctal = String.format("%0" + length + "o ", value);
+        String expectedOctal = String.format("%0" + (length - 1) + "o ", value);
         Assert.assertArrayEquals(expectedOctal.getBytes(), buf);
     }
 
@@ -27,7 +27,7 @@ public class TestTarUtils_formatLongOctalOrBinaryBytes_1 {
         long value = -5; // A negative value
         int result = TarUtils.formatLongOctalOrBinaryBytes(value, buf, offset, length);
         Assert.assertEquals(offset + length, result);
-        Assert.assertEquals((byte) 0xff, buf[offset]); // Check the negative marker
+        Assert.assertEquals((byte) 0xff, buf[offset + length - 1]); // Check the negative marker at the end
     }
 
     @Test
@@ -42,5 +42,27 @@ public class TestTarUtils_formatLongOctalOrBinaryBytes_1 {
         } catch (IllegalArgumentException e) {
             // Expected exception
         }
+    }
+
+    @Test
+    public void test_formatLongOctalOrBinaryBytes_valueFitsAsBinary() {
+        byte[] buf = new byte[10];
+        int offset = 0;
+        int length = 10;
+        long value = 10000; // A value that fits as binary
+        int result = TarUtils.formatLongOctalOrBinaryBytes(value, buf, offset, length);
+        Assert.assertEquals(offset + length, result);
+        Assert.assertEquals((byte) 0x80, buf[offset + length - 1]); // Check the binary marker at the end
+    }
+
+    @Test
+    public void test_formatLongOctalOrBinaryBytes_valueNegativeFitsAsBinary() {
+        byte[] buf = new byte[10];
+        int offset = 0;
+        int length = 10;
+        long value = -10000; // A negative value that fits as binary
+        int result = TarUtils.formatLongOctalOrBinaryBytes(value, buf, offset, length);
+        Assert.assertEquals(offset + length, result);
+        Assert.assertEquals((byte) 0xff, buf[offset + length - 1]); // Check the negative marker at the end
     }
 }
