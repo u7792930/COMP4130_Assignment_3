@@ -1,0 +1,153 @@
+==============================================================================
+Task 6 - Analyzing the Results
+==============================================================================
+
+------------------------------------------------------------------------------
+Project: codec
+Target class: org.apache.commons.codec.binary.StringUtils
+Bug focal method: equals
+------------------------------------------------------------------------------
+Generated test files: 62
+  kept (compiled):    58
+  removed (syntax):   4
+    - TestStringUtils_getBytes_NullEmpty_1.java
+    - TestStringUtils_newString_BoundaryValues_1.java
+    - TestStringUtils_newString_NormalFlow_1.java
+    - TestStringUtils_newString_NullEmpty_1.java
+
+  Branch coverage: 19/20 = 95.00%  (covered=19, total=20)
+  Line coverage:   38/39 = 97.44%  (covered=38, total=39)
+  Tests executed:  199
+  Tests passed:    167
+  Pass rate:       167/199 = 83.92%
+  Bug exposed?     False
+
+------------------------------------------------------------------------------
+Project: collections
+Target class: org.apache.commons.collections4.map.MultiValueMap
+Bug focal method: readObject
+------------------------------------------------------------------------------
+Generated test files: 85
+  kept (compiled):    59
+  removed (syntax):   26
+    - TestMultiValueMap_containsValue_NullEmpty_1.java
+    - TestMultiValueMap_multiValueMap_BoundaryValues_2.java
+    - TestMultiValueMap_multiValueMap_BoundaryValues_3.java
+    - TestMultiValueMap_multiValueMap_NormalFlow_1.java
+    - TestMultiValueMap_multiValueMap_NormalFlow_2.java
+    - TestMultiValueMap_multiValueMap_NormalFlow_3.java
+    - TestMultiValueMap_multiValueMap_NullEmpty_1.java
+    - TestMultiValueMap_multiValueMap_NullEmpty_2.java
+    - TestMultiValueMap_multiValueMap_NullEmpty_3.java
+    - TestMultiValueMap_putAll_BoundaryValues_1.java
+    - TestMultiValueMap_putAll_NormalFlow_1.java
+    - TestMultiValueMap_readObject_NormalFlow_1.java
+    - TestReflectionFactory_create_BoundaryValues_1.java
+    - TestReflectionFactory_create_NullEmpty_1.java
+    - TestValuesIterator_hasNext_BoundaryValues_1.java
+    - TestValuesIterator_hasNext_NullEmpty_1.java
+    - TestValuesIterator_remove_NormalFlow_1.java
+    - TestValuesIterator_remove_NullEmpty_1.java
+    - TestValues_clear_BoundaryValues_1.java
+    - TestValues_clear_NormalFlow_1.java
+    - TestValues_clear_NullEmpty_1.java
+    - TestValues_iterator_BoundaryValues_1.java
+    - TestValues_iterator_NullEmpty_1.java
+    - TestValues_size_BoundaryValues_1.java
+    - TestValues_size_NormalFlow_1.java
+    - TestValues_size_NullEmpty_1.java
+
+  Branch coverage: 36/44 = 81.82%  (covered=36, total=44)
+  Line coverage:   77/88 = 87.50%  (covered=77, total=88)
+  Tests executed:  196
+  Tests passed:    159
+  Pass rate:       159/196 = 81.12%
+  Bug exposed?     True
+    Failing focal-method test: TestMultiValueMap_readObject_BoundaryValues_1.java
+      JUnit summary: total=4, passed=2, failed=2
+      1) test_readObject_validData(org.apache.commons.collections4.map.TestMultiValueMap_readObject_BoundaryValues_1)
+      	at org.apache.commons.collections4.map.TestMultiValueMap_readObject_BoundaryValues_1.test_readObject_validData(TestMultiValueMap_readObject_BoundaryValues_1.java:27)
+      2) test_readObject_invalidData(org.apache.commons.collections4.map.TestMultiValueMap_readObject_BoundaryValues_1)
+      java.lang.AssertionError: Unexpected IOException thrown
+      	at org.apache.commons.collections4.map.TestMultiValueMap_readObject_BoundaryValues_1.test_readObject_invalidData(TestMultiValueMap_readObject_BoundaryValues_1.java:55)
+      Tests run: 4,  Failures: 2
+    Failing focal-method test: TestMultiValueMap_readObject_ExceptionPath_1.java
+      JUnit summary: total=2, passed=0, failed=2
+      1) test_readObject_IOExceptionThrown(org.apache.commons.collections4.map.TestMultiValueMap_readObject_ExceptionPath_1)
+      java.lang.AssertionError: expected:<Simulated IOException> but was:<null>
+      	at org.apache.commons.collections4.map.TestMultiValueMap_readObject_ExceptionPath_1.test_readObject_IOExceptionThrown(TestMultiValueMap_readObject_ExceptionPath_1.java:38)
+      2) test_readObject_ClassNotFoundExceptionThrown(org.apache.commons.collections4.map.TestMultiValueMap_readObject_ExceptionPath_1)
+      java.lang.AssertionError: Unexpected IOException thrown
+      	at org.apache.commons.collections4.map.TestMultiValueMap_readObject_ExceptionPath_1.test_readObject_ClassNotFoundExceptionThrown(TestMultiValueMap_readObject_ExceptionPath_1.java:61)
+    Failing focal-method test: TestMultiValueMap_readObject_NullEmpty_1.java
+      JUnit summary: total=3, passed=2, failed=1
+      1) test_readObject_emptyInputStream(org.apache.commons.collections4.map.TestMultiValueMap_readObject_NullEmpty_1)
+      java.lang.AssertionError: Unexpected IOException
+      	at org.apache.commons.collections4.map.TestMultiValueMap_readObject_NullEmpty_1.test_readObject_emptyInputStream(TestMultiValueMap_readObject_NullEmpty_1.java:47)
+      Tests run: 3,  Failures: 1
+
+------------------------------------------------------------------------------
+Project: compress
+Target class: org.apache.commons.compress.archivers.tar.TarUtils
+Bug focal method: formatLongOctalOrBinaryBytes
+------------------------------------------------------------------------------
+Generated test files: 68
+  kept (compiled):    68
+  removed (syntax):   0
+
+  Branch coverage: 98/102 = 96.08%  (covered=98, total=102)
+  Line coverage:   146/155 = 94.19%  (covered=146, total=155)
+  Tests executed:  316
+  Tests passed:    146
+  Pass rate:       146/316 = 46.20%
+  Bug exposed?     True
+    Failing focal-method test: TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1.java
+      JUnit summary: total=6, passed=0, failed=6
+      1) test_formatLongOctalOrBinaryBytes_longMaxValue(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1)
+      java.lang.AssertionError: expected:<128> but was:<-1>
+      	at org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1.test_formatLongOctalOrBinaryBytes_longMaxValue(TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1.java:23)
+      2) test_formatLongOctalOrBinaryBytes_sizeMaxValue(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1)
+      	at org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1.test_formatLongOctalOrBinaryBytes_sizeMaxValue(TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1.java:38)
+      3) test_formatLongOctalOrBinaryBytes_uidMaxValue(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_BoundaryValues_1)
+    Failing focal-method test: TestTarUtils_formatLongOctalOrBinaryBytes_NormalFlow_1.java
+      JUnit summary: total=5, passed=1, failed=4
+      1) test_formatLongOctalOrBinaryBytes_bufferTooSmall(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NormalFlow_1)
+      java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+      2) test_formatLongOctalOrBinaryBytes_validBinaryInput(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NormalFlow_1)
+      arrays first differed at element [0]; expected:<0> but was:<48>
+      	at org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NormalFlow_1.test_formatLongOctalOrBinaryBytes_validBinaryInput(TestTarUtils_formatLongOctalOrBinaryBytes_NormalFlow_1.java:32)
+      Caused by: java.lang.AssertionError: expected:<0> but was:<48>
+    Failing focal-method test: TestTarUtils_formatLongOctalOrBinaryBytes_NullEmpty_1.java
+      JUnit summary: total=6, passed=2, failed=4
+      1) test_formatLongOctalOrBinaryBytes_positiveValue_fitsAsOctal(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NullEmpty_1)
+      arrays first differed at element [5]; expected:<48> but was:<50>
+      	at org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NullEmpty_1.test_formatLongOctalOrBinaryBytes_positiveValue_fitsAsOctal(TestTarUtils_formatLongOctalOrBinaryBytes_NullEmpty_1.java:43)
+      Caused by: java.lang.AssertionError: expected:<48> but was:<50>
+      2) test_formatLongOctalOrBinaryBytes_positiveValue_fitsAsBinary(org.apache.commons.compress.archivers.tar.TestTarUtils_formatLongOctalOrBinaryBytes_NullEmpty_1)
+      java.lang.AssertionError: expected:<-128> but was:<32>
+
+==============================================================================
+OVERALL (summed across the three target classes)
+==============================================================================
+Branch coverage: 153/166 = 92.17%
+Line coverage:   261/282 = 92.55%
+Pass rate:       472/711 = 66.39%
+Bugs exposed:    2/3
+
+Score (Task 6 rubric)
+  Branch coverage  : 2.0 / 2
+  Line coverage    : 2.0 / 2
+  Pass rate        : 1.0 / 1
+  Bug identification: 0.5 / 1
+  TOTAL            : 5.5 / 6
+
+==============================================================================
+Per-class table
+==============================================================================
+Class                                                        BranchCov        LineCov       PassRate
+----------------------------------------------------------------------------------------------------
+org.apache.commons.codec.binary.StringUtils              19/20 (95.0%)  38/39 (97.4%) 167/199 (83.9%)
+org.apache.commons.collections4.map.MultiValueMap        36/44 (81.8%)  77/88 (87.5%) 159/196 (81.1%)
+org.apache.commons.compress.archivers.tar.TarUtils      98/102 (96.1%) 146/155 (94.2%) 146/316 (46.2%)
+
+Report saved to: /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task6_report.txt

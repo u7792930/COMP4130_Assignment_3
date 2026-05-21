@@ -54,7 +54,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 CONFIG = {
     # OpenAI API key (reused from Task 4)
-    "api_key": "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",
+    "api_key": "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",
 
     # I/O
     "input_csv":  str(REPO_ROOT / "LLM_Test_Gen" / "Data" / "task4_output.csv"),

@@ -1,450 +1,1498 @@
-2026-05-21 09:32:22,116 [INFO] ======================================================================
-2026-05-21 09:32:22,117 [INFO] Task 5 Pipeline - Feedback Loop
-2026-05-21 09:32:22,117 [INFO] ======================================================================
-2026-05-21 09:32:22,122 [INFO] Loaded 66 rows from /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task4_output.csv
-2026-05-21 09:32:22,122 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:22,122 [INFO] [1/66] org.apache.commons.codec.binary.StringUtils.equals
-2026-05-21 09:32:22,384 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:22,851 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:22,852 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:22,852 [INFO] [2/66] org.apache.commons.codec.binary.StringUtils.getBytes
-2026-05-21 09:32:23,016 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:32:28,310 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:32:29,546 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:32:29,926 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:29,928 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:29,928 [INFO] [3/66] org.apache.commons.codec.binary.StringUtils.getByteBuffer
-2026-05-21 09:32:30,092 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:32:35,524 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:32:36,731 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:32:37,115 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:37,116 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:37,116 [INFO] [4/66] org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
-2026-05-21 09:32:37,284 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:37,675 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:37,677 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:37,677 [INFO] [5/66] org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
-2026-05-21 09:32:37,838 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:38,239 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:38,240 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:38,241 [INFO] [6/66] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
-2026-05-21 09:32:38,406 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:38,791 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:38,792 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:38,792 [INFO] [7/66] org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
-2026-05-21 09:32:38,954 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:39,319 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:39,320 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:39,320 [INFO] [8/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16
-2026-05-21 09:32:39,483 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:39,871 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:32:39,871 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:32:44,842 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:32:46,435 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:32:46,437 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:46,437 [INFO] [9/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
-2026-05-21 09:32:46,598 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:46,977 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:46,978 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:46,978 [INFO] [10/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
-2026-05-21 09:32:47,138 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:47,518 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:32:47,518 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:32:54,895 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:32:56,486 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:32:56,488 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:56,488 [INFO] [11/66] org.apache.commons.codec.binary.StringUtils.getBytesUtf8
-2026-05-21 09:32:56,648 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:32:57,024 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:32:57,025 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:32:57,025 [INFO] [12/66] org.apache.commons.codec.binary.StringUtils.newIllegalStateException
-2026-05-21 09:32:57,186 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:33:01,739 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:02,954 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:33:03,331 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:03,333 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:03,333 [INFO] [13/66] org.apache.commons.codec.binary.StringUtils.newString
-2026-05-21 09:33:03,499 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:33:08,496 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:09,686 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:33:13,860 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:15,042 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:33:19,966 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:21,171 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:33:21,172 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:21,172 [INFO] [14/66] org.apache.commons.codec.binary.StringUtils.newString
-2026-05-21 09:33:21,337 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:21,761 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:21,763 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:21,763 [INFO] [15/66] org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
-2026-05-21 09:33:21,924 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:22,314 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:22,315 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:22,315 [INFO] [16/66] org.apache.commons.codec.binary.StringUtils.newStringUsAscii
-2026-05-21 09:33:22,478 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:22,865 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:22,866 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:22,866 [INFO] [17/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16
-2026-05-21 09:33:23,024 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:23,452 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:33:23,452 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:33:31,131 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:32,736 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:33:32,738 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:32,738 [INFO] [18/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
-2026-05-21 09:33:32,899 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:33,291 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:33,293 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:33,293 [INFO] [19/66] org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
-2026-05-21 09:33:33,457 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:33,843 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:33,845 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:33,845 [INFO] [20/66] org.apache.commons.codec.binary.StringUtils.newStringUtf8
-2026-05-21 09:33:34,005 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:33:34,376 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:33:34,378 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:34,378 [INFO] [21/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
-2026-05-21 09:33:34,557 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:33:37,786 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:39,102 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:33:39,673 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:33:39,673 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:33:43,826 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:45,058 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:33:52,917 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:33:54,578 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
-2026-05-21 09:33:54,581 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:33:54,581 [INFO] [22/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
-2026-05-21 09:33:54,765 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:34:01,117 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:02,375 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:34:09,225 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:10,479 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:34:17,231 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:18,484 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:34:18,485 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:34:18,485 [INFO] [23/66] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
-2026-05-21 09:34:18,665 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:34:27,097 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:28,342 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:34:28,780 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:34:28,782 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:34:28,782 [INFO] [24/66] org.apache.commons.collections4.map.MultiValueMap.writeObject
-2026-05-21 09:34:28,966 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:34:35,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:36,378 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:34:42,505 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:43,842 [INFO]     Phase A: compiled (iters=2)
-2026-05-21 09:34:44,319 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:34:44,319 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:34:57,249 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:34:58,535 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:35:06,606 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:35:08,269 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:35:08,271 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:08,271 [INFO] [25/66] org.apache.commons.collections4.map.MultiValueMap.readObject
-2026-05-21 09:35:08,460 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:35:17,624 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:35:18,856 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:35:19,263 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:35:19,263 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:35:36,981 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:35:38,728 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:35:38,730 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:38,730 [INFO] [26/66] org.apache.commons.collections4.map.MultiValueMap.clear
-2026-05-21 09:35:38,907 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:35:39,272 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:35:39,274 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:39,274 [INFO] [27/66] org.apache.commons.collections4.map.MultiValueMap.removeMapping
-2026-05-21 09:35:39,451 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:35:39,827 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:35:39,829 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:39,829 [INFO] [28/66] org.apache.commons.collections4.map.MultiValueMap.containsValue
-2026-05-21 09:35:40,027 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:35:40,374 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:35:40,375 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:40,375 [INFO] [29/66] org.apache.commons.collections4.map.MultiValueMap.put
-2026-05-21 09:35:40,551 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:35:40,905 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:35:40,905 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:35:46,832 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:35:48,436 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:35:48,437 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:35:48,437 [INFO] [30/66] org.apache.commons.collections4.map.MultiValueMap.putAll
-2026-05-21 09:35:48,623 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:36:02,687 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:04,006 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:36:16,076 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:17,380 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:36:29,410 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:30,686 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:36:30,687 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:30,687 [INFO] [31/66] org.apache.commons.collections4.map.MultiValueMap.entrySet
-2026-05-21 09:36:30,861 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:36:36,580 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:37,810 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:36:38,226 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:36:38,228 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:38,228 [INFO] [32/66] org.apache.commons.collections4.map.MultiValueMap.values
-2026-05-21 09:36:38,403 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:36:38,764 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:36:38,766 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:38,766 [INFO] [33/66] org.apache.commons.collections4.map.MultiValueMap.containsValue
-2026-05-21 09:36:38,949 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:36:39,302 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:36:39,303 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:39,303 [INFO] [34/66] org.apache.commons.collections4.map.MultiValueMap.getCollection
-2026-05-21 09:36:39,478 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:36:39,849 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:36:39,851 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:39,851 [INFO] [35/66] org.apache.commons.collections4.map.MultiValueMap.size
-2026-05-21 09:36:40,027 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:36:40,386 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:36:40,386 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:36:48,934 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:50,166 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:36:57,863 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:36:59,529 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:36:59,531 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:36:59,531 [INFO] [36/66] org.apache.commons.collections4.map.MultiValueMap.putAll
-2026-05-21 09:36:59,711 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:37:00,076 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:37:00,077 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:00,077 [INFO] [37/66] org.apache.commons.collections4.map.MultiValueMap.iterator
-2026-05-21 09:37:00,174 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:37:05,251 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:06,471 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:37:06,839 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:37:06,841 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:06,841 [INFO] [38/66] org.apache.commons.collections4.map.MultiValueMap.iterator
-2026-05-21 09:37:07,020 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:37:07,376 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:37:07,377 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:07,377 [INFO] [39/66] org.apache.commons.collections4.map.MultiValueMap.totalSize
-2026-05-21 09:37:07,549 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:37:07,904 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:37:07,905 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:07,905 [INFO] [40/66] org.apache.commons.collections4.map.MultiValueMap.createCollection
-2026-05-21 09:37:08,078 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:37:08,442 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:37:08,442 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:37:13,136 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:14,739 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:37:14,741 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:14,741 [INFO] [41/66] org.apache.commons.collections4.map.Values.iterator
-2026-05-21 09:37:14,909 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:37:19,792 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:21,005 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:37:25,422 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:26,642 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:37:30,544 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:31,773 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:37:31,773 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:37:31,773 [INFO] [42/66] org.apache.commons.collections4.map.Values.size
-2026-05-21 09:37:31,933 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:37:39,146 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:40,360 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:37:47,273 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:37:48,484 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:37:59,012 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:00,231 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:38:00,231 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:38:00,231 [INFO] [43/66] org.apache.commons.collections4.map.Values.clear
-2026-05-21 09:38:00,393 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:38:07,409 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:08,615 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:38:09,016 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:38:09,016 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:38:13,859 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:15,070 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:38:23,586 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:24,785 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:38:33,494 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:34,705 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:38:43,964 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:45,178 [INFO]     Phase B revision did not compile after repair; keeping prior compilable version
-2026-05-21 09:38:45,180 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:38:45,180 [INFO] [44/66] org.apache.commons.collections4.map.ValuesIterator.remove
-2026-05-21 09:38:45,276 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:38:50,929 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:52,146 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:38:57,279 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:38:58,493 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:39:03,746 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:05,440 [INFO]     Phase A: compiled (iters=3)
-2026-05-21 09:39:06,113 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:39:06,114 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:39:06,115 [INFO] [45/66] org.apache.commons.collections4.map.ValuesIterator.hasNext
-2026-05-21 09:39:06,276 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:39:14,184 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:15,408 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:39:20,813 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:22,047 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:39:28,811 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:30,035 [INFO]     Phase A: compiled (iters=3)
-2026-05-21 09:39:30,420 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:39:30,421 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:39:30,421 [INFO] [46/66] org.apache.commons.collections4.map.ValuesIterator.next
-2026-05-21 09:39:30,580 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:39:35,779 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:36,999 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:39:43,360 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:44,580 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:39:51,242 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:39:52,462 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:39:52,462 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:39:52,462 [INFO] [47/66] org.apache.commons.collections4.map.ReflectionFactory.create
-2026-05-21 09:39:52,626 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:40:01,167 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:40:02,384 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:40:12,321 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:40:13,542 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:40:19,085 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:40:20,298 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:40:20,299 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:40:20,299 [INFO] [48/66] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
-2026-05-21 09:40:20,470 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:40:20,870 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:40:20,872 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:40:20,872 [INFO] [49/66] org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
-2026-05-21 09:40:21,034 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:40:21,417 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:40:21,417 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:40:28,760 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:40:30,369 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:40:30,371 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:40:30,371 [INFO] [50/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
-2026-05-21 09:40:30,531 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:40:42,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:40:43,579 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:40:44,048 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:40:44,048 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:41:02,902 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:41:04,590 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:41:04,592 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:41:04,592 [INFO] [51/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
-2026-05-21 09:41:04,754 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:41:15,710 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:41:16,986 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:41:17,405 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:41:17,405 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:41:37,745 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:41:39,443 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:41:39,445 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:41:39,445 [INFO] [52/66] org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
-2026-05-21 09:41:39,605 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:41:39,964 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:41:39,964 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:41:51,565 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:41:53,216 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:41:53,217 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:41:53,217 [INFO] [53/66] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
-2026-05-21 09:41:53,377 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:42:06,925 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:42:08,211 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:42:08,605 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:42:08,605 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:42:24,645 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:42:26,335 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:42:26,337 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:42:26,337 [INFO] [54/66] org.apache.commons.compress.archivers.tar.TarUtils.parseName
-2026-05-21 09:42:26,500 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:42:26,855 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:42:26,855 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:42:40,516 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:42:42,208 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:42:42,210 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:42:42,210 [INFO] [55/66] org.apache.commons.compress.archivers.tar.TarUtils.parseName
-2026-05-21 09:42:42,371 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:42:47,988 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:42:49,192 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:42:56,148 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:42:57,374 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:43:05,422 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:43:06,634 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:43:06,635 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:43:06,635 [INFO] [56/66] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
-2026-05-21 09:43:06,798 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:43:07,183 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:43:07,184 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:43:07,184 [INFO] [57/66] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
-2026-05-21 09:43:07,373 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:43:20,862 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:43:22,156 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:43:32,321 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:43:33,547 [INFO]     Phase A iter 3: compile FAILED - requesting repair
-2026-05-21 09:43:44,309 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:43:45,614 [INFO]     Phase A: NOT compiled after 4 iters
-2026-05-21 09:43:45,615 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:43:45,615 [INFO] [58/66] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
-2026-05-21 09:43:45,778 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:43:46,163 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:43:46,164 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:44:05,573 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:44:07,278 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:44:07,281 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:44:07,281 [INFO] [59/66] org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
-2026-05-21 09:44:07,442 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:44:07,803 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:44:07,803 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:44:24,041 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:44:25,720 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:44:25,722 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:44:25,722 [INFO] [60/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
-2026-05-21 09:44:25,884 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:44:26,241 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:44:26,241 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:44:38,514 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:44:40,122 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:44:40,123 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:44:40,123 [INFO] [61/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
-2026-05-21 09:44:40,300 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:44:40,654 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:44:40,655 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:44:56,863 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:44:58,449 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:44:58,450 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:44:58,450 [INFO] [62/66] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
-2026-05-21 09:44:58,624 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:45:05,821 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:45:07,044 [INFO]     Phase A: compiled (iters=1)
-2026-05-21 09:45:07,400 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:45:07,400 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:45:31,302 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:45:33,006 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:45:33,008 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:45:33,008 [INFO] [63/66] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
-2026-05-21 09:45:33,173 [INFO]     Phase A iter 1: compile FAILED - requesting repair
-2026-05-21 09:46:11,607 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:46:12,829 [INFO]     Phase A iter 2: compile FAILED - requesting repair
-2026-05-21 09:46:42,896 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:46:44,192 [INFO]     Phase A: compiled (iters=2)
-2026-05-21 09:46:44,588 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:46:44,588 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:47:10,651 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:47:12,348 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:47:12,350 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:47:12,350 [INFO] [64/66] org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
-2026-05-21 09:47:12,514 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:47:12,864 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:47:12,864 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:47:27,835 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:47:29,417 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:47:29,419 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:47:29,419 [INFO] [65/66] org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
-2026-05-21 09:47:29,577 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:47:29,920 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
-2026-05-21 09:47:29,922 [INFO] ----------------------------------------------------------------------
-2026-05-21 09:47:29,922 [INFO] [66/66] org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
-2026-05-21 09:47:30,079 [INFO]     Phase A: compiled (iters=0)
-2026-05-21 09:47:30,438 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
-2026-05-21 09:47:30,438 [INFO]     Phase B iter 1: requesting behavior-guided regen
-2026-05-21 09:47:46,722 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2026-05-21 09:47:48,296 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
-2026-05-21 09:47:48,307 [INFO] ======================================================================
-2026-05-21 09:47:48,307 [INFO] SUMMARY
-2026-05-21 09:47:48,307 [INFO] ======================================================================
-2026-05-21 09:47:48,307 [INFO] Total tests:           66
-2026-05-21 09:47:48,307 [INFO] Compiled (runnable):   57
-2026-05-21 09:47:48,307 [INFO] Passed (no failures):  34
-2026-05-21 09:47:48,307 [INFO] Output CSV:            /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task5_output.csv
+2026-05-21 11:09:14,220 [INFO] ======================================================================
+2026-05-21 11:09:14,220 [INFO] Task 5 Pipeline - Feedback Loop
+2026-05-21 11:09:14,220 [INFO] ======================================================================
+2026-05-21 11:09:14,236 [INFO] Loaded 215 rows from /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task4_output.csv
+2026-05-21 11:09:14,236 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:14,236 [INFO] [1/215] org.apache.commons.codec.binary.StringUtils.equals
+2026-05-21 11:09:14,561 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:09:15,019 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:15,020 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:15,020 [INFO] [2/215] org.apache.commons.codec.binary.StringUtils.equals
+2026-05-21 11:09:15,180 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:09:15,555 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:15,556 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:15,556 [INFO] [3/215] org.apache.commons.codec.binary.StringUtils.equals
+2026-05-21 11:09:15,719 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:09:16,109 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:16,110 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:16,110 [INFO] [4/215] org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-21 11:09:16,270 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:09:21,802 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:23,023 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:09:23,428 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:23,429 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:23,429 [INFO] [5/215] org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-21 11:09:23,592 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:09:27,143 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:28,368 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:09:31,608 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:32,824 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:09:36,358 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:37,563 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:09:37,563 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:37,563 [INFO] [6/215] org.apache.commons.codec.binary.StringUtils.getBytes
+2026-05-21 11:09:37,720 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:09:42,296 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:43,503 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:09:43,908 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:43,911 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:43,911 [INFO] [7/215] org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-21 11:09:44,076 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:09:47,372 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:48,583 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:09:48,970 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:48,971 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:48,972 [INFO] [8/215] org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-21 11:09:49,132 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:09:56,837 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:09:58,046 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:09:58,419 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:09:58,420 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:09:58,420 [INFO] [9/215] org.apache.commons.codec.binary.StringUtils.getByteBuffer
+2026-05-21 11:09:58,580 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:10:01,968 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:03,184 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:10:03,562 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:03,564 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:03,564 [INFO] [10/215] org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-21 11:10:03,728 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:04,098 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:04,100 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:04,100 [INFO] [11/215] org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-21 11:10:04,262 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:04,648 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:04,650 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:04,650 [INFO] [12/215] org.apache.commons.codec.binary.StringUtils.getByteBufferUtf8
+2026-05-21 11:10:04,812 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:05,197 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:05,199 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:05,199 [INFO] [13/215] org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-21 11:10:05,346 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:05,722 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:10:05,722 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:10:14,479 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:16,163 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:10:16,165 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:16,165 [INFO] [14/215] org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-21 11:10:16,328 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:16,713 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:16,714 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:16,714 [INFO] [15/215] org.apache.commons.codec.binary.StringUtils.getBytesIso8859_1
+2026-05-21 11:10:16,874 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:17,248 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:17,249 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:17,249 [INFO] [16/215] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-21 11:10:17,413 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:10:21,106 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:22,307 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:10:27,248 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:28,460 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:10:28,873 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:28,875 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:28,875 [INFO] [17/215] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-21 11:10:29,036 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:29,417 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:10:29,417 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:10:32,983 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:34,575 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:10:34,576 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:34,576 [INFO] [18/215] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-21 11:10:34,736 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:35,124 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:35,125 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:35,125 [INFO] [19/215] org.apache.commons.codec.binary.StringUtils.getBytesUnchecked
+2026-05-21 11:10:35,286 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:10:38,652 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:39,875 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:10:40,261 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:40,263 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:40,263 [INFO] [20/215] org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-21 11:10:40,434 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:40,830 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:40,831 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:40,831 [INFO] [21/215] org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-21 11:10:40,996 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:41,377 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:41,379 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:41,379 [INFO] [22/215] org.apache.commons.codec.binary.StringUtils.getBytesUsAscii
+2026-05-21 11:10:41,538 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:41,914 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:10:41,915 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:41,915 [INFO] [23/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-21 11:10:42,072 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:10:46,603 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:47,804 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:10:48,179 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:10:48,179 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:10:53,843 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:10:55,431 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:10:55,433 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:10:55,433 [INFO] [24/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-21 11:10:55,596 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:10:55,981 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:10:55,981 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:00,740 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:02,332 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:02,333 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:02,333 [INFO] [25/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16
+2026-05-21 11:11:02,499 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:02,885 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:11:02,885 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:08,926 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:10,512 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:10,514 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:10,514 [INFO] [26/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-21 11:11:10,673 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:11,063 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:11,065 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:11,065 [INFO] [27/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-21 11:11:11,229 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:11,603 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:11,605 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:11,605 [INFO] [28/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Be
+2026-05-21 11:11:11,765 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:12,165 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:11:12,165 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:16,495 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:18,126 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:18,128 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:18,128 [INFO] [29/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-21 11:11:18,289 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:18,665 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:11:18,665 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:26,355 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:27,952 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:27,954 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:27,954 [INFO] [30/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-21 11:11:28,117 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:28,494 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:28,496 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:28,496 [INFO] [31/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf16Le
+2026-05-21 11:11:28,658 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:29,030 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:29,032 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:29,032 [INFO] [32/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-21 11:11:29,192 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:29,564 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:11:29,564 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:34,119 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:35,720 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:35,722 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:35,722 [INFO] [33/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-21 11:11:35,881 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:36,261 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:36,262 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:36,262 [INFO] [34/215] org.apache.commons.codec.binary.StringUtils.getBytesUtf8
+2026-05-21 11:11:36,421 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:11:36,800 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:11:36,802 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:36,802 [INFO] [35/215] org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-21 11:11:36,965 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:11:44,152 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:45,370 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:11:45,754 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:11:45,754 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:11:51,898 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:11:53,510 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:11:53,512 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:11:53,512 [INFO] [36/215] org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-21 11:11:53,676 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:11:59,000 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:00,207 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:12:06,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:07,272 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:12:07,669 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:12:07,669 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:12:13,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:14,861 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:12:14,863 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:12:14,863 [INFO] [37/215] org.apache.commons.codec.binary.StringUtils.newIllegalStateException
+2026-05-21 11:12:15,026 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:12:18,458 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:19,667 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:12:20,031 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:12:20,031 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:12:23,686 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:24,886 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:12:29,276 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:30,880 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:12:30,881 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:12:30,881 [INFO] [38/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:12:31,045 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:12:33,903 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:35,107 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:12:38,633 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:39,840 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:12:42,747 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:43,964 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:12:43,964 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:12:43,964 [INFO] [39/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:12:44,126 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:12:46,925 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:48,124 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:12:50,715 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:51,913 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:12:54,528 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:55,731 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:12:55,732 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:12:55,732 [INFO] [40/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:12:55,890 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:12:58,636 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:12:59,841 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:13:03,271 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:04,471 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:13:07,509 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:08,711 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:13:08,711 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:08,711 [INFO] [41/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:13:08,868 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:13:15,645 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:16,849 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:13:17,260 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:17,262 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:17,262 [INFO] [42/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:13:17,424 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:17,820 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:13:17,820 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:13:24,305 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:25,900 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:13:25,901 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:25,901 [INFO] [43/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:13:26,062 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:26,447 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:26,449 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:26,449 [INFO] [44/215] org.apache.commons.codec.binary.StringUtils.newString
+2026-05-21 11:13:26,613 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:27,000 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:27,002 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:27,002 [INFO] [45/215] org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-21 11:13:27,166 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:27,542 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:27,544 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:27,544 [INFO] [46/215] org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-21 11:13:27,702 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:28,109 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:28,112 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:28,112 [INFO] [47/215] org.apache.commons.codec.binary.StringUtils.newStringIso8859_1
+2026-05-21 11:13:28,273 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:28,678 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:13:28,678 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:13:35,543 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:37,131 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:13:37,133 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:37,133 [INFO] [48/215] org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-21 11:13:37,304 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:37,684 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:37,685 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:37,685 [INFO] [49/215] org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-21 11:13:37,851 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:38,354 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:38,356 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:38,356 [INFO] [50/215] org.apache.commons.codec.binary.StringUtils.newStringUsAscii
+2026-05-21 11:13:38,522 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:38,951 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:38,952 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:38,952 [INFO] [51/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-21 11:13:39,117 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:39,505 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:13:39,505 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:13:48,776 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:50,481 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:13:50,484 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:50,484 [INFO] [52/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-21 11:13:50,665 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:51,054 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:13:51,055 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:13:56,329 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:13:57,930 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:13:57,932 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:57,932 [INFO] [53/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16
+2026-05-21 11:13:58,096 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:58,482 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:58,483 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:58,483 [INFO] [54/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-21 11:13:58,643 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:59,052 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:59,053 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:59,053 [INFO] [55/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-21 11:13:59,213 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:13:59,605 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:13:59,607 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:13:59,607 [INFO] [56/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Be
+2026-05-21 11:13:59,766 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:14:00,153 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:14:00,153 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:14:10,890 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:14:12,677 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:14:12,678 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:12,678 [INFO] [57/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-21 11:14:12,848 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:14:13,232 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:14:13,234 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:13,234 [INFO] [58/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-21 11:14:13,398 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:14:16,528 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:14:17,750 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:14:18,141 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:14:18,143 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:18,143 [INFO] [59/215] org.apache.commons.codec.binary.StringUtils.newStringUtf16Le
+2026-05-21 11:14:18,308 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:14:18,717 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:14:18,717 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:14:25,809 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:14:27,401 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:14:27,402 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:27,402 [INFO] [60/215] org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-21 11:14:27,557 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:14:32,910 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:14:34,113 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:14:34,501 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:14:34,503 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:34,503 [INFO] [61/215] org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-21 11:14:34,663 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:14:35,027 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:14:35,028 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:35,028 [INFO] [62/215] org.apache.commons.codec.binary.StringUtils.newStringUtf8
+2026-05-21 11:14:35,189 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:14:35,575 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:14:35,576 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:14:35,576 [INFO] [63/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:14:35,769 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:14:46,097 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:14:47,330 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:15:01,760 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:03,063 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:15:13,769 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:15,083 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:15:15,084 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:15:15,084 [INFO] [64/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:15:15,263 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:15:21,655 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:22,874 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:15:30,290 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:31,515 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:15:44,490 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:45,702 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:15:45,703 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:15:45,703 [INFO] [65/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:15:45,901 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:15:54,014 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:15:55,245 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:15:55,689 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:15:55,691 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:15:55,691 [INFO] [66/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:15:55,893 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:16:01,284 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:02,519 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:16:07,735 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:08,999 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:16:15,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:16,263 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:16:16,264 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:16:16,264 [INFO] [67/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:16:16,442 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:16:20,004 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:21,231 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:16:24,294 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:25,548 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:16:28,875 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:30,108 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:16:30,109 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:16:30,109 [INFO] [68/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:16:30,292 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:16:35,179 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:36,418 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:16:42,645 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:43,880 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:16:48,185 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:49,419 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:16:49,420 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:16:49,420 [INFO] [69/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:16:49,603 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:16:55,411 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:16:56,636 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:17:03,507 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:04,744 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:17:11,737 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:12,973 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:17:12,974 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:17:12,974 [INFO] [70/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:17:13,153 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:17:18,393 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:19,606 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:17:24,638 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:25,866 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:17:31,118 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:32,337 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:17:32,338 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:17:32,338 [INFO] [71/215] org.apache.commons.collections4.map.MultiValueMap.multiValueMap
+2026-05-21 11:17:32,512 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:17:38,006 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:39,246 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:17:44,771 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:45,999 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:17:51,470 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:17:52,705 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:17:52,706 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:17:52,706 [INFO] [72/215] org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-21 11:17:52,909 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:17:53,358 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:17:53,358 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:18:04,951 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:06,689 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:18:06,691 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:18:06,691 [INFO] [73/215] org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-21 11:18:06,857 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:18:12,642 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:13,849 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:18:20,177 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:21,401 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:18:21,860 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:18:21,860 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:18:31,413 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:33,018 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:18:33,020 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:18:33,020 [INFO] [74/215] org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-21 11:18:33,116 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:18:37,685 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:38,918 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:18:50,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:18:51,941 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:18:59,291 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:00,517 [INFO]     Phase A: compiled (iters=3)
+2026-05-21 11:19:00,961 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:19:00,961 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:19:14,251 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:15,992 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:19:15,994 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:19:15,994 [INFO] [75/215] org.apache.commons.collections4.map.MultiValueMap.writeObject
+2026-05-21 11:19:16,179 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:19:20,559 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:21,779 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:19:22,134 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:19:22,135 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:19:22,135 [INFO] [76/215] org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-21 11:19:22,320 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:19:29,727 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:30,952 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:19:39,322 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:40,550 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:19:48,922 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:50,147 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:19:50,148 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:19:50,148 [INFO] [77/215] org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-21 11:19:50,331 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:19:50,760 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:19:50,761 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:19:57,210 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:19:58,865 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:19:58,867 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:19:58,867 [INFO] [78/215] org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-21 11:19:59,043 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:20:04,603 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:05,841 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:20:06,261 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:20:06,261 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:20:14,328 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:15,938 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:20:15,940 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:20:15,940 [INFO] [79/215] org.apache.commons.collections4.map.MultiValueMap.readObject
+2026-05-21 11:20:16,118 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:20:21,909 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:23,128 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:20:29,045 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:30,276 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:20:36,337 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:37,570 [INFO]     Phase A: compiled (iters=3)
+2026-05-21 11:20:37,978 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:20:37,978 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:20:44,593 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:45,818 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:20:52,310 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:20:53,530 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:20:59,182 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:00,404 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:21:05,726 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:07,322 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:21:07,324 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:07,324 [INFO] [80/215] org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-21 11:21:07,498 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:21:07,854 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:07,856 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:07,856 [INFO] [81/215] org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-21 11:21:08,031 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:21:08,404 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:21:08,405 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:21:10,391 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:11,981 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:21:11,982 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:11,982 [INFO] [82/215] org.apache.commons.collections4.map.MultiValueMap.clear
+2026-05-21 11:21:12,160 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:21:12,520 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:12,522 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:12,522 [INFO] [83/215] org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-21 11:21:12,698 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:21:13,070 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:13,072 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:13,072 [INFO] [84/215] org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-21 11:21:13,248 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:21:13,616 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:13,618 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:13,618 [INFO] [85/215] org.apache.commons.collections4.map.MultiValueMap.removeMapping
+2026-05-21 11:21:13,790 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:21:18,422 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:19,634 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:21:19,984 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:19,985 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:19,986 [INFO] [86/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:21:20,081 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:21:23,572 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:24,799 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:21:25,156 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:21:25,158 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:25,158 [INFO] [87/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:21:25,341 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:21:29,540 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:30,756 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:21:35,525 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:36,735 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:21:41,976 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:43,178 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:21:43,179 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:43,179 [INFO] [88/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:21:43,274 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:21:48,428 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:49,652 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:21:50,034 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:21:50,034 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:21:57,644 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:21:59,267 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:21:59,268 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:21:59,268 [INFO] [89/215] org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-21 11:21:59,452 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:22:03,684 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:04,906 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:22:05,265 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:22:05,267 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:22:05,267 [INFO] [90/215] org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-21 11:22:05,436 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:22:05,817 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:22:05,817 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:22:11,875 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:13,447 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:22:13,449 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:22:13,449 [INFO] [91/215] org.apache.commons.collections4.map.MultiValueMap.put
+2026-05-21 11:22:13,623 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:22:13,973 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:22:13,974 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:22:13,975 [INFO] [92/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:22:14,162 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:22:24,881 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:26,107 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:22:36,202 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:37,434 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:22:48,948 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:50,177 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:22:50,178 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:22:50,178 [INFO] [93/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:22:50,357 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:22:50,717 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:22:50,719 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:22:50,719 [INFO] [94/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:22:50,899 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:22:57,651 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:22:58,877 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:23:06,560 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:07,781 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:23:15,572 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:16,790 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:23:16,790 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:16,790 [INFO] [95/215] org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-21 11:23:16,967 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:17,348 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:17,349 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:17,349 [INFO] [96/215] org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-21 11:23:17,528 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:17,897 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:23:17,897 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:23:22,639 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:24,235 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:23:24,237 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:24,237 [INFO] [97/215] org.apache.commons.collections4.map.MultiValueMap.entrySet
+2026-05-21 11:23:24,414 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:24,773 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:24,774 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:24,774 [INFO] [98/215] org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-21 11:23:24,949 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:25,329 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:25,331 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:25,331 [INFO] [99/215] org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-21 11:23:25,500 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:23:29,016 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:30,233 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:23:30,587 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:30,589 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:30,589 [INFO] [100/215] org.apache.commons.collections4.map.MultiValueMap.values
+2026-05-21 11:23:30,766 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:31,127 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:31,129 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:31,129 [INFO] [101/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:23:31,225 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:23:34,741 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:35,957 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:23:36,316 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:36,317 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:36,317 [INFO] [102/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:23:36,491 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:36,850 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:36,852 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:36,852 [INFO] [103/215] org.apache.commons.collections4.map.MultiValueMap.containsValue
+2026-05-21 11:23:37,031 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:37,400 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:23:37,400 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:23:42,913 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:23:44,496 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:23:44,498 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:44,498 [INFO] [104/215] org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-21 11:23:44,673 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:45,021 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:45,023 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:45,023 [INFO] [105/215] org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-21 11:23:45,205 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:45,565 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:45,566 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:45,566 [INFO] [106/215] org.apache.commons.collections4.map.MultiValueMap.getCollection
+2026-05-21 11:23:45,750 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:46,103 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:46,105 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:46,105 [INFO] [107/215] org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-21 11:23:46,280 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:46,628 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:46,629 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:46,629 [INFO] [108/215] org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-21 11:23:46,804 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:47,164 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:23:47,165 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:23:47,165 [INFO] [109/215] org.apache.commons.collections4.map.MultiValueMap.size
+2026-05-21 11:23:47,340 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:23:47,699 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:23:47,699 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:24:08,924 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:24:10,529 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:24:10,531 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:24:10,531 [INFO] [110/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:24:10,725 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:24:11,082 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:24:11,083 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:24:11,083 [INFO] [111/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:24:11,257 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:24:11,603 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:24:11,605 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:24:11,605 [INFO] [112/215] org.apache.commons.collections4.map.MultiValueMap.putAll
+2026-05-21 11:24:11,788 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:11,906 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:25:11,906 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:25:18,967 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:25:20,661 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:25:20,664 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:20,664 [INFO] [113/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:20,854 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:21,235 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:25:21,235 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:25:29,615 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:25:31,216 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:25:31,218 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:31,218 [INFO] [114/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:31,398 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:31,763 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:31,765 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:31,765 [INFO] [115/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:31,959 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:32,321 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:32,323 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:32,323 [INFO] [116/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:32,514 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:32,875 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:32,876 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:32,876 [INFO] [117/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:33,058 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:33,422 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:33,423 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:33,423 [INFO] [118/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:33,606 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:33,991 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:33,993 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:33,993 [INFO] [119/215] org.apache.commons.collections4.map.MultiValueMap.iterator
+2026-05-21 11:25:34,175 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:34,539 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:34,541 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:34,541 [INFO] [120/215] org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-21 11:25:34,729 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:25:40,061 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:25:41,286 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:25:41,692 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:25:41,693 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:41,693 [INFO] [121/215] org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-21 11:25:41,880 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:42,336 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:25:42,336 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:25:47,486 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:25:48,736 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:25:57,058 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:25:58,696 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:25:58,698 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:25:58,698 [INFO] [122/215] org.apache.commons.collections4.map.MultiValueMap.totalSize
+2026-05-21 11:25:58,883 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:25:59,268 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:25:59,268 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:26:04,532 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:26:06,146 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:26:06,147 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:26:06,147 [INFO] [123/215] org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-21 11:26:06,320 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:26:06,687 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:26:06,688 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:26:06,688 [INFO] [124/215] org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-21 11:26:06,861 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:26:07,222 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:26:07,223 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:26:07,223 [INFO] [125/215] org.apache.commons.collections4.map.MultiValueMap.createCollection
+2026-05-21 11:26:07,400 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:26:07,775 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:26:07,775 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:26:12,644 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:26:14,275 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:26:14,277 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:26:14,277 [INFO] [126/215] org.apache.commons.collections4.map.Values.iterator
+2026-05-21 11:26:14,469 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:26:35,181 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:26:36,416 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:26:57,479 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:26:58,708 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:26:59,048 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:26:59,048 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:27:16,728 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:27:17,940 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:27:40,997 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:27:42,573 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:27:42,575 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:27:42,575 [INFO] [127/215] org.apache.commons.collections4.map.Values.iterator
+2026-05-21 11:27:42,742 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:27:50,009 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:27:51,205 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:27:59,122 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:00,332 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:28:09,464 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:10,662 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:28:10,662 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:28:10,662 [INFO] [128/215] org.apache.commons.collections4.map.Values.iterator
+2026-05-21 11:28:10,846 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:28:20,421 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:21,633 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:28:29,867 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:31,085 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:28:49,400 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:50,618 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:28:50,618 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:28:50,618 [INFO] [129/215] org.apache.commons.collections4.map.Values.size
+2026-05-21 11:28:50,778 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:28:54,521 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:28:55,735 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:29:01,967 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:03,180 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:29:07,181 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:08,413 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:29:08,413 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:29:08,413 [INFO] [130/215] org.apache.commons.collections4.map.Values.size
+2026-05-21 11:29:08,574 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:29:13,479 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:14,688 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:29:23,808 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:25,011 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:29:30,566 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:31,776 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:29:31,776 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:29:31,776 [INFO] [131/215] org.apache.commons.collections4.map.Values.size
+2026-05-21 11:29:31,938 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:29:34,616 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:35,825 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:29:39,241 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:40,448 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:29:43,221 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:44,429 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:29:44,429 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:29:44,429 [INFO] [132/215] org.apache.commons.collections4.map.Values.clear
+2026-05-21 11:29:44,589 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:29:50,522 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:51,734 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:29:55,335 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:29:56,543 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:30:00,985 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:02,195 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:30:02,196 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:30:02,196 [INFO] [133/215] org.apache.commons.collections4.map.Values.clear
+2026-05-21 11:30:02,355 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:30:06,099 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:07,297 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:30:10,661 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:11,889 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:30:15,662 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:16,872 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:30:16,873 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:30:16,873 [INFO] [134/215] org.apache.commons.collections4.map.Values.clear
+2026-05-21 11:30:17,038 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:30:19,973 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:21,177 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:30:24,123 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:25,329 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:30:30,064 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:31,270 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:30:31,271 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:30:31,271 [INFO] [135/215] org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-21 11:30:31,432 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:30:40,610 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:41,814 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:30:49,008 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:30:50,220 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:30:59,041 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:00,243 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:31:00,244 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:31:00,244 [INFO] [136/215] org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-21 11:31:00,426 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:31:07,538 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:08,747 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:31:14,154 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:15,375 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:31:23,039 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:24,247 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:31:24,248 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:31:24,248 [INFO] [137/215] org.apache.commons.collections4.map.ValuesIterator.remove
+2026-05-21 11:31:24,344 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:31:29,761 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:30,973 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:31:37,549 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:38,772 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:31:45,429 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:31:46,649 [INFO]     Phase A: compiled (iters=3)
+2026-05-21 11:31:47,063 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:31:47,063 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:31:59,193 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:32:00,906 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:32:00,907 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:32:00,908 [INFO] [138/215] org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-21 11:32:01,068 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:32:15,576 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:32:16,877 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:32:30,120 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:32:31,421 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:32:31,840 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:32:31,841 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:32:31,841 [INFO] [139/215] org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-21 11:32:32,008 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:32:39,501 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:32:40,716 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:32:48,233 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:32:49,454 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:32:59,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:00,279 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:33:00,280 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:33:00,280 [INFO] [140/215] org.apache.commons.collections4.map.ValuesIterator.hasNext
+2026-05-21 11:33:00,441 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:33:08,487 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:09,704 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:33:19,128 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:20,423 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:33:29,880 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:31,092 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:33:31,092 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:33:31,092 [INFO] [141/215] org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-21 11:33:31,267 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:33:37,301 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:38,523 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:33:45,447 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:46,673 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:33:47,076 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:33:47,078 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:33:47,078 [INFO] [142/215] org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-21 11:33:47,258 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:33:47,610 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:33:47,612 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:33:47,612 [INFO] [143/215] org.apache.commons.collections4.map.ValuesIterator.next
+2026-05-21 11:33:47,786 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:33:52,978 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:33:54,208 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:33:58,959 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:34:00,181 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:34:00,538 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:34:00,540 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:34:00,540 [INFO] [144/215] org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-21 11:34:00,698 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:34:09,814 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:34:11,086 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:34:24,151 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:34:25,441 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:34:25,859 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:34:25,861 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:34:25,861 [INFO] [145/215] org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-21 11:34:26,041 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:34:33,472 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:34:34,691 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:34:47,662 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:34:48,949 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:35:00,093 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:01,304 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:35:01,304 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:35:01,304 [INFO] [146/215] org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-21 11:35:01,467 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:35:12,550 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:13,765 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:35:24,260 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:25,462 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:35:36,447 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:37,650 [INFO]     Phase A: NOT compiled after 4 iters
+2026-05-21 11:35:37,651 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:35:37,651 [INFO] [147/215] org.apache.commons.collections4.map.ReflectionFactory.create
+2026-05-21 11:35:37,812 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:35:40,847 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:42,048 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:35:52,113 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:35:53,326 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:35:53,719 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:35:53,721 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:35:53,721 [INFO] [148/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-21 11:35:53,887 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:35:54,266 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:35:54,268 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:35:54,268 [INFO] [149/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-21 11:35:54,429 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:35:54,786 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:35:54,786 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:36:18,224 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:36:19,924 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:36:19,925 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:19,925 [INFO] [150/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-21 11:36:20,088 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:36:20,430 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:36:20,431 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:20,431 [INFO] [151/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctal
+2026-05-21 11:36:20,594 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:36:20,934 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:36:20,936 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:20,936 [INFO] [152/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-21 11:36:21,095 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:36:21,469 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:36:21,469 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:36:32,945 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:36:34,504 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:36:34,506 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:34,507 [INFO] [153/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-21 11:36:34,667 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:36:35,026 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:36:35,026 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:36:41,676 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:36:43,222 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:36:43,224 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:43,224 [INFO] [154/215] org.apache.commons.compress.archivers.tar.TarUtils.parseOctalOrBinary
+2026-05-21 11:36:43,388 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:36:43,747 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:36:43,747 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:36:52,324 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:36:53,922 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:36:53,924 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:36:53,924 [INFO] [155/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-21 11:36:54,093 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:37:01,361 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:37:02,572 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:37:02,937 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:37:02,937 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:37:10,244 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:37:11,453 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:37:29,393 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:37:31,085 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:37:31,087 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:37:31,087 [INFO] [156/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-21 11:37:31,248 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:37:41,754 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:37:42,971 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:37:43,326 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:37:43,326 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:37:50,114 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:37:51,683 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:37:51,685 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:37:51,685 [INFO] [157/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-21 11:37:51,841 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:38:06,041 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:38:07,258 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:38:07,622 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:38:07,623 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:38:18,961 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:38:20,544 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:38:20,546 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:38:20,546 [INFO] [158/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryLong
+2026-05-21 11:38:20,706 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:38:30,546 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:38:31,891 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:38:32,300 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:38:32,300 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:38:42,098 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:38:43,687 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:38:43,689 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:38:43,689 [INFO] [159/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-21 11:38:43,849 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:38:49,216 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:38:50,424 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:38:50,779 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:38:50,779 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:39:03,235 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:39:04,852 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:39:04,854 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:39:04,854 [INFO] [160/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-21 11:39:05,014 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:39:11,177 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:39:12,385 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:39:12,737 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:39:12,737 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:39:29,614 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:39:31,211 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:39:31,213 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:39:31,213 [INFO] [161/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-21 11:39:31,371 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:39:39,957 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:39:41,176 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:39:41,590 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:39:41,590 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:39:56,110 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:39:57,798 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:39:57,799 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:39:57,799 [INFO] [162/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBinaryBigInteger
+2026-05-21 11:39:57,949 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:40:07,244 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:40:08,465 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:40:08,832 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:40:08,833 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:40:30,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:40:31,808 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:40:31,810 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:40:31,810 [INFO] [163/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-21 11:40:31,968 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:40:32,307 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:40:32,308 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:40:32,308 [INFO] [164/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-21 11:40:32,455 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:40:32,811 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:40:32,811 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:40:43,855 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:40:45,522 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:40:45,524 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:40:45,524 [INFO] [165/215] org.apache.commons.compress.archivers.tar.TarUtils.parseBoolean
+2026-05-21 11:40:45,688 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:40:46,047 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:40:46,047 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:40:52,896 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:40:54,460 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:40:54,462 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:40:54,462 [INFO] [166/215] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-21 11:40:54,626 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:41:06,933 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:08,142 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:41:08,493 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:41:08,493 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:41:17,750 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:19,374 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:41:19,375 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:41:19,375 [INFO] [167/215] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-21 11:41:19,533 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:41:27,040 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:28,253 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:41:28,640 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:41:28,640 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:41:33,868 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:35,468 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:41:35,470 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:41:35,470 [INFO] [168/215] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-21 11:41:35,625 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:41:45,276 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:46,473 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:41:54,511 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:41:55,716 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:41:56,079 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:41:56,079 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:42:04,037 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:42:05,592 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:42:05,594 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:42:05,594 [INFO] [169/215] org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+2026-05-21 11:42:05,751 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:42:16,723 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:42:17,933 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:42:18,282 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:42:18,283 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:42:18,283 [INFO] [170/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:42:18,446 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:42:18,799 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:42:18,799 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:42:31,616 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:42:33,182 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:42:33,186 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:42:33,186 [INFO] [171/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:42:33,346 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:42:33,709 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:42:33,709 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:42:40,286 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:42:41,837 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:42:41,839 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:42:41,839 [INFO] [172/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:42:42,005 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:42:42,362 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:42:42,362 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:42:58,105 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:42:59,662 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:42:59,664 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:42:59,664 [INFO] [173/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:42:59,829 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:43:00,182 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:43:00,182 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:43:10,393 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:11,966 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:43:11,968 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:43:11,968 [INFO] [174/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:43:12,133 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:43:17,344 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:18,561 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:43:18,920 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:43:18,922 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:43:18,922 [INFO] [175/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:43:19,084 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:43:23,892 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:25,102 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:43:25,466 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:43:25,467 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:43:36,504 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:38,238 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:43:38,239 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:43:38,239 [INFO] [176/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:43:38,399 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:43:47,052 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:48,247 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:43:52,991 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:43:54,199 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:43:59,323 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:00,537 [INFO]     Phase A: compiled (iters=3)
+2026-05-21 11:44:00,929 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:44:00,930 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:44:13,765 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:15,485 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 11:44:15,487 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:44:15,487 [INFO] [177/215] org.apache.commons.compress.archivers.tar.TarUtils.parseName
+2026-05-21 11:44:15,637 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:44:20,551 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:21,764 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:44:26,646 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:27,862 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:44:28,220 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:44:28,221 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:44:40,881 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:42,482 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:44:42,483 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:44:42,483 [INFO] [178/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:44:42,661 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:44:43,009 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:44:43,011 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:44:43,011 [INFO] [179/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:44:43,175 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:44:43,540 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:44:43,540 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:44:51,975 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:44:53,555 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:44:53,556 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:44:53,556 [INFO] [180/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:44:53,718 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:44:54,082 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:44:54,083 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:45:04,660 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:45:06,237 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:45:06,239 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:45:06,239 [INFO] [181/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:45:06,400 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:45:15,937 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:45:17,143 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:45:17,521 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:45:17,521 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:45:21,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:45:23,472 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:45:23,473 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:45:23,473 [INFO] [182/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:45:23,642 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:45:36,458 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:45:37,685 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:45:38,048 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:45:38,048 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:45:56,384 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:45:57,966 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:45:57,967 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:45:57,967 [INFO] [183/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:45:58,131 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:46:07,649 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:46:08,849 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:46:09,203 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:46:09,203 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:46:22,908 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:46:24,480 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:46:24,482 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:46:24,482 [INFO] [184/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:46:24,651 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:46:45,713 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:46:47,015 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:47:03,663 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:47:04,882 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:47:05,284 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:47:05,284 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:47:26,013 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:47:27,659 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:47:27,661 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:47:27,661 [INFO] [185/215] org.apache.commons.compress.archivers.tar.TarUtils.formatNameBytes
+2026-05-21 11:47:27,825 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:47:40,675 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:47:41,888 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:47:52,611 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:47:53,818 [INFO]     Phase A iter 3: compile FAILED - requesting repair
+2026-05-21 11:48:12,274 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:48:13,481 [INFO]     Phase A: compiled (iters=3)
+2026-05-21 11:48:13,865 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:48:13,865 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:48:28,760 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:48:30,067 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:48:44,119 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:48:45,763 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:48:45,764 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:48:45,764 [INFO] [186/215] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-21 11:48:45,910 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:48:46,250 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:48:46,251 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:48:46,251 [INFO] [187/215] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-21 11:48:46,412 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:48:46,770 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:48:46,771 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:48:59,983 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:49:01,570 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:49:01,572 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:49:01,572 [INFO] [188/215] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-21 11:49:01,740 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:49:02,101 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:49:02,101 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:49:16,069 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:49:17,783 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:49:17,785 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:49:17,785 [INFO] [189/215] org.apache.commons.compress.archivers.tar.TarUtils.formatUnsignedOctalString
+2026-05-21 11:49:17,945 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:49:18,293 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 11:49:18,295 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:49:18,295 [INFO] [190/215] org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-21 11:49:18,477 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:49:18,814 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:49:18,815 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:49:33,273 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:49:34,848 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:49:34,850 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:49:34,850 [INFO] [191/215] org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-21 11:49:35,009 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:49:35,372 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:49:35,372 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:49:48,733 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:49:50,265 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:49:50,267 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:49:50,267 [INFO] [192/215] org.apache.commons.compress.archivers.tar.TarUtils.formatOctalBytes
+2026-05-21 11:49:50,435 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:49:50,781 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:49:50,782 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:50:05,854 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:50:07,422 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:50:07,423 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:50:07,424 [INFO] [193/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-21 11:50:07,588 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:50:07,968 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:50:07,968 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:50:21,502 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:50:23,064 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:50:23,066 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:50:23,066 [INFO] [194/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-21 11:50:23,225 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:50:23,582 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:50:23,582 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:50:34,206 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:50:35,896 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:50:35,897 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:50:35,898 [INFO] [195/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+2026-05-21 11:50:36,064 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:50:36,414 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:50:36,414 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:50:46,286 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:50:47,843 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:50:47,845 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:50:47,845 [INFO] [196/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-21 11:50:48,005 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:50:58,400 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:50:59,609 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:50:59,949 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:50:59,949 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:51:22,844 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:51:24,390 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:51:24,391 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:51:24,391 [INFO] [197/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-21 11:51:24,554 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:51:24,907 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:51:24,908 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:51:45,167 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:51:46,727 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:51:46,729 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:51:46,729 [INFO] [198/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes
+2026-05-21 11:51:46,894 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 11:51:47,239 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:51:47,240 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:52:04,727 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:52:06,296 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:52:06,297 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:52:06,297 [INFO] [199/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-21 11:52:06,453 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:52:19,681 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:52:20,989 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:52:21,415 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:52:21,416 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:52:40,163 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:52:41,740 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:52:41,742 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:52:41,742 [INFO] [200/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-21 11:52:41,905 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:52:52,083 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:52:53,302 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:53:04,838 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:53:06,157 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:53:06,570 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:53:06,570 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:53:30,678 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:53:32,379 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:53:32,381 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:53:32,381 [INFO] [201/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-21 11:53:32,541 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:53:40,594 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:53:41,806 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:53:42,192 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:53:42,192 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:53:56,809 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:53:58,526 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:53:58,528 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:53:58,528 [INFO] [202/215] org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+2026-05-21 11:53:58,698 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:54:09,541 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:54:10,787 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:54:11,149 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:54:11,149 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:54:24,306 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:54:26,009 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:54:26,010 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:54:26,010 [INFO] [203/215] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-21 11:54:26,172 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:55:27,583 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:55:28,812 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:55:29,193 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:55:29,193 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:55:50,215 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:55:51,930 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:55:51,932 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:55:51,932 [INFO] [204/215] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-21 11:55:52,094 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:56:18,069 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:56:19,279 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:56:44,128 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:56:45,354 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 11:56:45,733 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:56:45,733 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:57:09,063 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:57:10,284 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:57:58,625 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:57:59,838 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 11:58:47,953 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:58:49,681 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:58:49,684 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:58:49,684 [INFO] [205/215] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-21 11:58:49,843 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 11:59:17,052 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:59:18,353 [INFO]     Phase A: compiled (iters=1)
+2026-05-21 11:59:18,757 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 11:59:18,757 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 11:59:37,938 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 11:59:39,585 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 11:59:39,587 [INFO] ----------------------------------------------------------------------
+2026-05-21 11:59:39,587 [INFO] [206/215] org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+2026-05-21 11:59:39,761 [INFO]     Phase A iter 1: compile FAILED - requesting repair
+2026-05-21 12:00:20,657 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:00:21,970 [INFO]     Phase A iter 2: compile FAILED - requesting repair
+2026-05-21 12:01:14,230 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:01:15,561 [INFO]     Phase A: compiled (iters=2)
+2026-05-21 12:01:15,984 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:01:15,984 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:01:37,663 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:01:39,270 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:01:39,272 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:01:39,272 [INFO] [207/215] org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-21 12:01:39,447 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:01:39,803 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:01:39,803 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:01:49,417 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:01:51,011 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:01:51,013 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:01:51,013 [INFO] [208/215] org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-21 12:01:51,178 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:01:51,538 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:01:51,538 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:02:03,987 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:02:05,563 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:02:05,565 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:05,565 [INFO] [209/215] org.apache.commons.compress.archivers.tar.TarUtils.formatCheckSumOctalBytes
+2026-05-21 12:02:05,731 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:06,096 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:02:06,096 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:02:13,889 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:02:15,494 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:02:15,495 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:15,495 [INFO] [210/215] org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-21 12:02:15,655 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:16,007 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 12:02:16,008 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:16,008 [INFO] [211/215] org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-21 12:02:16,175 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:16,525 [INFO]     Phase B initial run: passed=True, uncovered_lines=0
+2026-05-21 12:02:16,526 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:16,526 [INFO] [212/215] org.apache.commons.compress.archivers.tar.TarUtils.computeCheckSum
+2026-05-21 12:02:16,692 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:17,054 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:02:17,054 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:02:25,020 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:02:26,587 [INFO]     Phase B iter 1 after regen: passed=True, uncovered_lines=0
+2026-05-21 12:02:26,589 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:26,589 [INFO] [213/215] org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-21 12:02:26,752 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:27,113 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:02:27,113 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:02:39,411 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:02:41,066 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:02:41,067 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:41,068 [INFO] [214/215] org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-21 12:02:41,235 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:41,598 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:02:41,598 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:02:47,706 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:02:49,280 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:02:49,281 [INFO] ----------------------------------------------------------------------
+2026-05-21 12:02:49,281 [INFO] [215/215] org.apache.commons.compress.archivers.tar.TarUtils.verifyCheckSum
+2026-05-21 12:02:49,429 [INFO]     Phase A: compiled (iters=0)
+2026-05-21 12:02:49,781 [INFO]     Phase B initial run: passed=False, uncovered_lines=0
+2026-05-21 12:02:49,782 [INFO]     Phase B iter 1: requesting behavior-guided regen
+2026-05-21 12:03:01,458 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-21 12:03:03,159 [INFO]     Phase B iter 1 after regen: passed=False, uncovered_lines=0
+2026-05-21 12:03:03,186 [INFO] ======================================================================
+2026-05-21 12:03:03,186 [INFO] SUMMARY
+2026-05-21 12:03:03,187 [INFO] ======================================================================
+2026-05-21 12:03:03,187 [INFO] Total tests:           215
+2026-05-21 12:03:03,187 [INFO] Compiled (runnable):   185
+2026-05-21 12:03:03,187 [INFO] Passed (no failures):  103
+2026-05-21 12:03:03,187 [INFO] Output CSV:            /Users/tawhidlabib/COMP4130/Assignment3/COMP4130_Assignment_3/LLM_Test_Gen/Data/task5_output.csv

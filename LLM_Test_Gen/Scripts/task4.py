@@ -34,16 +34,20 @@ from pathlib import Path
 
 CONFIG = {
     # Your OpenAI API key
-    "api_key": "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",
+    "api_key": "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",
 
-    # Path to your Task 1 CSV
-    "input_csv": "LLM_Test_Gen/data/task1_output.csv",
+    # Task 4.1 spec: "Using the strategy outputs from Task 2 ... use the
+    # prompt template from Task 3 to generate unit test code for each unit."
+    # We consume task3_output.csv (one row per generation unit, with a
+    # FilledPrompt column already populated by Task3PromptFiller).
+    "input_csv": "LLM_Test_Gen/Data/task3_output.csv",
 
-    # Path to your Task 3 prompt template
+    # Path to your Task 3 prompt template (kept as fallback for rows
+    # without a FilledPrompt cell)
     "prompt_template_file": "LLM_Test_Gen/Scripts/prompt_template.txt",
 
     # Output CSV path
-    "output_csv": "LLM_Test_Gen/data/task4_output.csv",
+    "output_csv": "LLM_Test_Gen/Data/task4_output.csv",
 
     # Column name in your CSV that holds the fully qualified name
     "fqn_column": "FQN",
@@ -155,17 +159,47 @@ def call_gpt4o_mini(client: openai.OpenAI, prompt: str, config: dict) -> str:
         return f"ERROR: {e}"
 
 
+def partition_label(row: pd.Series) -> str:
+    """
+    Extract a short, filesystem-safe partition label from the
+    GenerationTarget cell, e.g. 'NORMAL_FLOW' from
+    'NORMAL_FLOW: Generate tests using ...'.
+    """
+    target = row.get("GenerationTarget", "")
+    if not isinstance(target, str) or not target.strip():
+        return "ALL"
+    head = target.split(":", 1)[0].strip()
+    # keep only ASCII alphanumerics / underscores
+    head = re.sub(r"[^A-Za-z0-9_]", "", head)
+    return head or "ALL"
+
+
 def generate_tests(df: pd.DataFrame, template: str, config: dict) -> pd.DataFrame:
-    """Task 4.1: Generate test code for every row in the CSV."""
+    """
+    Task 4.1: Generate test code for every generation unit.
+
+    Each row in task3_output.csv is one generation unit (one focal method
+    + one input partition). The row's FilledPrompt column already carries
+    the prompt with every #{...}# placeholder substituted; we just send
+    it. We fall back to fill_prompt(template, row) if FilledPrompt is
+    missing, so the script still works on a task2-style CSV.
+    """
     client = openai.OpenAI(api_key=config["api_key"])
     generated_codes = []
 
     total = len(df)
     for idx, row in df.iterrows():
         fqn = row[config["fqn_column"]]
-        logger.info(f"[{idx + 1}/{total}] Generating test for: {fqn}")
+        part = partition_label(row)
 
-        prompt = fill_prompt(template, row)
+        # Use the pre-filled prompt from Task 3 when available
+        if "FilledPrompt" in row and isinstance(row["FilledPrompt"], str) \
+                and row["FilledPrompt"].strip():
+            prompt = row["FilledPrompt"]
+        else:
+            prompt = fill_prompt(template, row)
+
+        logger.info(f"[{idx + 1}/{total}] Generating test for: {fqn} [{part}]")
         code = call_gpt4o_mini(client, prompt, config)
         generated_codes.append(code)
 
@@ -230,15 +264,18 @@ def detect_class_name(code: str) -> str:
     return None
 
 
-def generate_unique_class_name(fqn: str, index: int) -> str:
+def generate_unique_class_name(fqn: str, index: int, partition: str = "ALL") -> str:
     """
-    Generate a unique test class name from the FQN and an index.
-    e.g. "org.apache.commons.codec.binary.StringUtils.equals" -> "TestStringUtils_equals_1"
+    Generate a unique test class name from the FQN, partition label, and
+    an index. Including the partition keeps the four per-focal-method
+    test classes in distinct files, e.g.
+
+      Test<EnclosingClass>_<method>_<PARTITION>_<index>
     """
     parts = fqn.split(".")
     if len(parts) >= 2:
-        class_name = parts[-2]  # enclosing class
-        method_name = parts[-1]  # method
+        class_name = parts[-2]
+        method_name = parts[-1]
     elif len(parts) == 1:
         class_name = parts[0]
         method_name = "method"
@@ -246,14 +283,16 @@ def generate_unique_class_name(fqn: str, index: int) -> str:
         class_name = "Unknown"
         method_name = "method"
 
-    # Clean names: remove anything non-alphanumeric
     class_name = re.sub(r"[^a-zA-Z0-9]", "", class_name)
     method_name = re.sub(r"[^a-zA-Z0-9]", "", method_name)
-
-    # Handle cases where method_name matches common patterns like <init> or <clinit>
     method_name = method_name.replace("init", "Init").replace("clinit", "Clinit")
 
-    return f"Test{class_name}_{method_name}_{index}"
+    # CamelCase the partition label so the class name stays readable:
+    # NORMAL_FLOW -> NormalFlow, NULL_EMPTY -> NullEmpty, ALL -> All
+    part_pieces = [p for p in re.split(r"[^A-Za-z0-9]+", partition or "") if p]
+    part_cc = "".join(p[:1].upper() + p[1:].lower() for p in part_pieces) or "All"
+
+    return f"Test{class_name}_{method_name}_{part_cc}_{index}"
 
 
 def set_package_declaration(code: str, package: str) -> str:
@@ -391,16 +430,19 @@ def format_and_save_tests(df: pd.DataFrame, config: dict) -> pd.DataFrame:
 
         package = config["test_packages"][project]
 
-        # Step 3: Generate unique class name
-        if fqn not in fqn_counter:
-            fqn_counter[fqn] = 0
-        fqn_counter[fqn] += 1
-        unique_name = generate_unique_class_name(fqn, fqn_counter[fqn])
+        # Step 3: Generate unique class name (include partition label so
+        # the per-partition tests for the same focal method don't collide)
+        part = partition_label(row)
+        key = (fqn, part)
+        if key not in fqn_counter:
+            fqn_counter[key] = 0
+        fqn_counter[key] += 1
+        unique_name = generate_unique_class_name(fqn, fqn_counter[key], part)
 
         # Handle collisions
         while unique_name in used_names:
-            fqn_counter[fqn] += 1
-            unique_name = generate_unique_class_name(fqn, fqn_counter[fqn])
+            fqn_counter[key] += 1
+            unique_name = generate_unique_class_name(fqn, fqn_counter[key], part)
         used_names.add(unique_name)
 
         # Step 4: Rename class in code
